@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: trafflab/trafflab-gatsby-netlify-cms
-  branch: main
+  branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
