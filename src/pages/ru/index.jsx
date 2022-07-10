@@ -1,4 +1,4 @@
-// import * as React from "react";
+import * as React from "react";
 // import Helmet from "react-helmet";
 
 // import { LangContext } from "../../utils/contexts";
@@ -83,3 +83,7 @@
 //     </>
 //   )
 // }
+
+export default function Ru() {
+  return <div>blaa</div>
+}
