@@ -67,6 +67,27 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-i18n`,
+    //   options: {
+    //     langKeyDefault: 'en',
+    //     langKeyForNull: 'en',
+    //     useLangKeyLayout: false,
+    //     prefixDefault: true,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-6TR3D406KP",
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: false,
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {

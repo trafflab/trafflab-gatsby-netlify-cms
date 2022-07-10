@@ -14,6 +14,28 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "article"
+    label: "Article"
+    folder: "src/pages/ru/blog"
+    create: true
+    slug: "{{custom-slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "custom-slug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "string" }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { 
+          label: "Paragraphs",
+          name: "paragraphs",
+          widget: "list",
+          fields:
+            [
+              { label: "Subtitle", name: "subtitle", widget: "string" },
+              { label: "Text", name: "text", widget: "string" },
+            ]
+        }
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
