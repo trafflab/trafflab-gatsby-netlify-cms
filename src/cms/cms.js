@@ -7,4 +7,4 @@ CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
 
-CMS.registerPreviewTemplate('articles', ArticlePagePreview)
+CMS.registerPreviewTemplate('article', ArticlePagePreview)

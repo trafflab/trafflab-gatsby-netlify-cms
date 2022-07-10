@@ -28,29 +28,15 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const articles = result.data.allMarkdownRemark.edges
 
-    posts.forEach((edge) => {
-      const id = edge.node.id
-      if (edge.node.frontmatter.lang === 'ru') {
+    articles.forEach((edge) => {
         createPage({
           path: edge.node.fields.slug,
-          component: require.resolve(`./src/templates/article-page.js`),
+          component: require.resolve(`./src/templates/article-page/article-page.js`),
           context: { slug: edge.node.fields.slug, },
         })
-      } else {
-        // createPage({
-        //   path: edge.node.fields.slug,
-        //   tags: edge.node.frontmatter.tags,
-        //   component: path.resolve(
-        //     `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        //   ),
-        //   // additional data can be passed via context
-        //   context: {
-        //     id,
-        //   },
-        // })
-      }
+
 
     })
   })

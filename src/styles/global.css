@@ -1,0 +1,89 @@
+@import url(./fonts/helios-extra/helios-extra-font.css);
+
+html {
+  font-size: calc(1vw / 14.4);
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: calc(1vw / 3.2);
+    background-color: #181818;
+  }
+}
+
+:root {
+  --font-basic: 'HeliosExt';
+  --color-white: #fff;
+  --color-dark-1: #121212;
+  --color-dark-2: #181818;
+  --color-gray-1: #444444;
+  --color-gray-2:#ADADAD;
+
+  --color-red-1: #FD676A;
+  --color-red-2: #FF9799;
+  --color-red-3: #E03F42;
+  --color-blue: #699CFC;
+  --color-purple: #CB9CFD;
+  --color-green: #3DCA3F;
+  --color-orange: #FD9941;
+  
+  /* relative to 1440px */
+  --font-size-large: 64rem; /* 64px */
+  --font-size-big: 44rem; /* 44px */
+  --font-size-middle: 24rem; ; /* 24px */
+  --font-size-small: 18rem; /* 18px */
+  --font-size-body-big: 16rem; /* 16px */
+  --font-size-body-middle: 14rem; /* 14px */
+  --font-size-body-small: 12rem; /* 12px */
+
+  --link-opacity-transition: linear 0.35s opacity;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+
+body::after {
+  content: '';
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  background-image:
+    url(../images/form-popup/image.webp);
+}
+
+@media screen and (max-width: 480px) {
+  body::after {
+    background-image:
+      url(../images/form-popup/image480.webp);
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, pre {
+  margin: 0;
+}
+
+@keyframes openAniamtion {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes closeAniamtion {
+  0% {opacity: 1}
+  100% {opacity: 0}
+}
