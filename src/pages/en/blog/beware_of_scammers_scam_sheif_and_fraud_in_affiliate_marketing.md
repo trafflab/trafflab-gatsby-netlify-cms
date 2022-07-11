@@ -3,6 +3,7 @@ title: Beware of scammers! Scam, sheif and fraud in Affiliate marketing
 customSlug: beware_of_scammers_scam_sheif_and_fraud_in_affiliate_marketing
 lang: en
 date: 2022-06-11T16:02:49.948Z
+pageKeywordsForSEO: 'scammers, Scam, sheif, fraud, Affiliate, marketing'
 notReadyMessage: The article will be available for free very soon. Stay tuned for announcements :)
 image: /img/article-3.png
 cardTitle: Beware of scammers! Scam, sheif and fraud in Affiliate marketing

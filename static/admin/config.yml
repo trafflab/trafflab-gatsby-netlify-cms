@@ -21,9 +21,10 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ru", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -37,9 +38,10 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "en", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -53,9 +55,10 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ua", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }

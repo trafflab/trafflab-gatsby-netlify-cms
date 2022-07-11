@@ -25,6 +25,7 @@ export const query = graphql`
         lang
         date(formatString: "DD.MM.YYYY")
         title
+        pageKeywordsForSEO
         notReadyMessage
         image {
           childImageSharp {

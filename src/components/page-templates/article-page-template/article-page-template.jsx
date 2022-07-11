@@ -4,7 +4,7 @@ import * as styles from './article-page-template.module.css';
 import { Header, Footer } from '../../sections';
 import { Is480Context, LangContext } from '../../../utils/contexts';
 import FixedContacts from '../../common/fixed-contacts/fixed-contacts';
-import Paragraph from '../../../components/common/paragraph/paragraph';
+import { Helmet } from 'react-helmet';
 import MediaGatsbyImage from '../../../components/ui/media-gatsby-image/media-gatsby-image';
 import { NavPopup } from '../../../components/popups';
 import BasicButton from '../../../components/ui/basic-button/basic-button';
@@ -21,6 +21,10 @@ export default function ArticlePageTemplate({ article, content }) {
   const closeNavPopup = () => setNavPopupOpen(false);
   return (
     <>
+      <Helmet>
+        <meta name='description' content={article.title}/>
+        <meta name='keywords' content={article.pageKeywordsForSEO}/>
+      </Helmet>
       <div ref={pageRef} className={styles.page}>
         <Header openNavPopupHandler={openNavPopup} />
             <main className={styles.main}>
@@ -28,7 +32,7 @@ export default function ArticlePageTemplate({ article, content }) {
               {article.notReadyMessage 
                   ? <h1 className={styles.title}>{article.notReadyMessage}</h1>
                   : <div className={styles.content}>
-                      <div className={styles.imageContainer}><MediaGatsbyImage image={article.image} /></div>
+                      <div className={styles.imageContainer}><MediaGatsbyImage alt={article.title} image={article.image} /></div>
                       <h3 className={styles.title}>{article.title}</h3>
                       <div className={styles.textContainer} dangerouslySetInnerHTML={{ __html: content }} />
                       <p className={styles.date}>{article.date}</p>
