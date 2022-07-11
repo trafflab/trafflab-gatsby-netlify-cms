@@ -11,7 +11,7 @@ export default function MediaGatsbyImage({ image_480=false, image, alt }) {
   return (
     (handledImg?.layout || handledImg_480?.layout) ? (
       <GatsbyImage
-        image={is480 ? handledImg_480 : handledImg}
+        image={(is480 && image_480) ? handledImg_480 : handledImg}
         objectFit="fill"
         objectPosition={'center'}
         style={{width: "100%", height:"100%"}}

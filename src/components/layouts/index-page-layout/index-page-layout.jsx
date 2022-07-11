@@ -15,16 +15,13 @@ import bubble1_webp from '../../../images/background-elements/blurred-circle-1.w
 import bubble2_480_webp from '../../../images/background-elements/blurred-circle-1-480.webp';
 
 import { Is480Context, MessagesContext } from '../../../utils/contexts';
-import useIs480 from '../../../hooks/use-is-480';
-
-import { YMInitializer } from 'react-yandex-metrika';
 
 export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
   
   const [isSuccessMessage, setIsSuccessMessage] = React.useState(false);
 
   const pageRef = React.useRef();
-  const is480 = useIs480()
+  const is480 = React.useContext(Is480Context)
   
   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
   
@@ -34,34 +31,31 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
     setTimeout(() => setIsSuccessMessage(false), 2000)
   } 
 
-  
   return (
     <>
-      <Is480Context.Provider value={is480}>
-          <MessagesContext.Provider value={showSuccessMessage}>
-              <div ref={pageRef} className={styles.page}>
-                <BackgroundItems />
-                
-                <div className={styles.content}>
-                  
-                  <div className={styles.openingContainer}>
-                    <Header openNavPopupHandler={openNavPopupHandler}/>
-                    <Opening openFormPopupHandler={openFormPopupHandler} />
-                    <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image_480={bubble2_480} image_webp={bubble1_webp} image_480_webp={bubble2_480_webp}/></div>
-                  </div>
-
-                  <main className={styles.main}>
-                    { children }
-                  </main>
-                  
-                  <Footer />
-                  {(!is480) && <FixedContacts scrollHandler={smoothScrollToHeader} />}
-                </div>
-                <SuccessMessage isShown={isSuccessMessage} />
+      <MessagesContext.Provider value={showSuccessMessage}>
+          <div ref={pageRef} className={styles.page}>
+            <BackgroundItems />
+            
+            <div className={styles.content}>
+              
+              <div className={styles.openingContainer}>
+                <Header openNavPopupHandler={openNavPopupHandler}/>
+                <Opening openFormPopupHandler={openFormPopupHandler} />
+                <div className={styles.blurredBubbleContainer}><MediaImage image={bubble1} image_480={bubble2_480} image_webp={bubble1_webp} image_480_webp={bubble2_480_webp}/></div>
               </div>
-            </MessagesContext.Provider>
-        <YMInitializer accounts={[89406166]} options={{webvisor: true}} version="2" />
-      </Is480Context.Provider>
+
+              <main className={styles.main}>
+                { children }
+              </main>
+              
+              <Footer />
+              {(!is480) && <FixedContacts scrollHandler={smoothScrollToHeader} />}
+            </div>
+            <SuccessMessage isShown={isSuccessMessage} />
+          </div>
+        </MessagesContext.Provider>
+
     </>
   )
 }

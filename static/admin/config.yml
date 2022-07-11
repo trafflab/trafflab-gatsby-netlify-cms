@@ -14,90 +14,49 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "article"
-    label: "Article"
+  - name: "articlesRu"
+    label: "articlesRu"
     folder: "src/pages/ru/blog"
     create: true
-    slug: "{{custom-slug}}"
+    slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "custom-slug", widget: "string" }
-      - { label: "Lang", name: "lang", widget: "string" }
+      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ru", }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
-      - { 
-          label: "Paragraphs",
-          name: "paragraphs",
-          widget: "list",
-          fields:
-            [
-              { label: "Subtitle", name: "subtitle", widget: "string" },
-              { label: "Text", name: "text", widget: "string" },
-            ]
-        }
-
-  # - name: "article_en"
-  #   label: "Article en"
-  #   folder: "src/pages/en/blog"
-  #   create: true
-  #   slug: "{{custom-slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Slug", name: "custom-slug", widget: "string" }
-  #     - { label: "Lang", name: "lang", widget: "string" }
-  #     - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
-  #     - { label: "Article image", name: "image", widget: image }
-  #     - { 
-  #         label: "Paragraphs",
-  #         name: "paragraphs",
-  #         widget: "list",
-  #         fields:
-  #           [
-  #             { label: "Subtitle", name: "subtitle", widget: "string" },
-  #             { label: "Text", name: "text", widget: "string" },
-  #           ]
-  #       }
-
-  # - name: "article_ru"
-  #   label: "Article ru"
-  #   folder: "src/pages/ru/blog"
-  #   create: true
-  #   slug: "{{custom-slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Slug", name: "custom-slug", widget: "string" }
-  #     - { label: "Lang", name: "lang", widget: "string" }
-  #     - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
-  #     - { label: "Article image", name: "image", widget: image }
-  #     - { 
-  #         label: "Paragraphs",
-  #         name: "paragraphs",
-  #         widget: "list",
-  #         fields:
-  #           [
-  #             { label: "Subtitle", name: "subtitle", widget: "string" },
-  #             { label: "Text", name: "text", widget: "string" },
-  #           ]
-  #       }
-
-  # - name: "article_ua"
-  #   label: "Article ua"
-  #   folder: "src/pages/ua/blog"
-  #   create: true
-  #   slug: "{{custom-slug}}"
-  #   fields:
-  #     - { label: "Title", name: "title", widget: "string" }
-  #     - { label: "Slug", name: "custom-slug", widget: "string" }
-  #     - { label: "Lang", name: "lang", widget: "string" }
-  #     - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
-  #     - { label: "Article image", name: "image", widget: image }
-  #     - { 
-  #         label: "Paragraphs",
-  #         name: "paragraphs",
-  #         widget: "list",
-  #         fields:
-  #           [
-  #             { label: "Subtitle", name: "subtitle", widget: "string" },
-  #             { label: "Text", name: "text", widget: "string" },
-  #           ]
-  #       }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }
+  - name: "articlesEn"
+    label: "articlesEn"
+    folder: "src/pages/en/blog"
+    create: true
+    slug: "{{customSlug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "en", }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }
+  - name: "articlesUa"
+    label: "articlesUa"
+    folder: "src/pages/ua/blog"
+    create: true
+    slug: "{{customSlug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ua", }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }
+  

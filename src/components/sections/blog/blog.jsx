@@ -7,7 +7,7 @@ import SliderLayout from "../../common/slider-layout/slider-layout";
 import { SplideSlide } from '@splidejs/react-splide';
 import { LangContext } from "../../../utils/contexts";
 
-export default function Blog({openArticlePopupHandler}) {
+export default function Blog({ openArticlePopupHandler, articlesData }) {
   const data = React.useContext(LangContext).blog;
 
   return (
@@ -21,7 +21,7 @@ export default function Blog({openArticlePopupHandler}) {
         <ul className={styles.list}>
           <SliderLayout>
             {
-              data.articlesList.map((articleData, index) => (
+              articlesData.map((articleData, index) => (
                 <SplideSlide key={index}><BlogCard openHandler={openArticlePopupHandler} data={articleData}/></SplideSlide>
               ))
             }

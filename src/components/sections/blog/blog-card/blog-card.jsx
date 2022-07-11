@@ -1,25 +1,31 @@
 import * as React from "react"
 import * as styles from './blog-card.module.css';
-import MediaImage from '../../../ui/media-image/media-image';
+import MediaGatsbyImage from "../../../ui/media-gatsby-image/media-gatsby-image";
 
-export default function BlogCard({ openHandler, data: { image, image_480, image_webp, image_480_webp, title, texts, id, slug }} ) {
-
+export default function BlogCard({ openHandler = () => false, data } ) {
+  const article = data?.node?.frontmatter ? data.node.frontmatter : data
+  const handleOpenPopup = () => openHandler(
+    {
+      image: article.image,
+      title: article.title,
+      text: data.node.html,
+      notReadyMessage: article.notReadyMessage
+    },
+    article.customSlug,
+  )
   return (
     <article className={styles.card}>
-      <button onClick={() => openHandler(String(id), slug)} className={styles.button} type='button' >
+      <button onClick={handleOpenPopup} className={styles.button} type='button' >
 
         <div className={styles.imageContainer}>
-          <MediaImage
-            image_webp={image_webp}
-            image_480_webp={image_480_webp}
-            image={image}
-            image_480={image_480}
+          <MediaGatsbyImage
+            image={article.cardImage}
           />
           </div>
         <div className={styles.textContainer}>
           <div className={styles.about}>
-            <h3 className={styles.title}>{title}</h3>
-            <p className={styles.text}>{texts[0].text}</p>
+            <h3 className={styles.title}>{article.cardTitle}</h3>
+            <p className={styles.text}>{article.cardText}</p>
           </div>
         </div>
       </button>

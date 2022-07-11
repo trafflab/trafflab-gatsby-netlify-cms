@@ -2,6 +2,7 @@ import * as React from "react"
 import * as styles from './lang-list.module.css';
 import { navigate } from "gatsby";
 import { changeRelativeUrlLang } from "../../../utils/utils";
+import { SiteLangContext } from "../../../utils/contexts";
 
 export default function LangList() {
   const [lang, setLang] = React.useState('');
@@ -11,10 +12,11 @@ export default function LangList() {
     setLang(evt.target.value)
     navigate(changeRelativeUrlLang(evt.target.value))
   }
-
+  const siteLang = React.useContext(SiteLangContext)
+  
   React.useEffect(() => {
-    setLang(localStorage.getItem('lang'));
-  })
+    setLang(siteLang);
+  }, [siteLang])
 
   return (
     <div className={styles.langList}>
