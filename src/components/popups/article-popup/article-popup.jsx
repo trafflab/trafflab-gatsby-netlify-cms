@@ -17,6 +17,7 @@ export default function ArticlePopup({isOpen, data, closeHandler}) {
               <div className={styles.imageContainer}><MediaGatsbyImage image={data.image} /></div>
               <h3 className={styles.title}>{data.title}</h3>
               <div className={styles.textContainer} dangerouslySetInnerHTML={{__html: data.text}} />
+              <p className={styles.date}>{data.date}</p>
             </div>
         }
       </div>

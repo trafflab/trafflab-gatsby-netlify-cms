@@ -23,6 +23,7 @@ export const query = graphql`
       html
       frontmatter {
         lang
+        date(formatString: "DD.MM.YYYY")
         title
         notReadyMessage
         image {

@@ -4,6 +4,7 @@ import PageLayout from "../../components/layouts/page-layout/page-layout";
 import { graphql } from "gatsby";
 
 export default function IndexPageRu({ data }) {
+
   return (
     <PageLayout>
       <IndexPageTemplate blogData={data.allMarkdownRemark.edges} />
@@ -13,12 +14,16 @@ export default function IndexPageRu({ data }) {
 
 export const query = graphql`
   query IndexPageRuQuery($lang: String = "ru") {
-    allMarkdownRemark(filter: {frontmatter: {lang: {eq: $lang}}}) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {lang: {eq: $lang}}}
+      ) {
       edges {
         node {
           html
           frontmatter {
             lang
+            date(formatString: "DD.MM.YYYY")
             customSlug
             notReadyMessage
             title

@@ -4,10 +4,8 @@ import { Link } from "gatsby";
 
 export default function EcosystemCard({ cardClass, linkTo }) {
   return (
-    <li>
-      <article className={`${styles.card} ${styles[cardClass]}`}>
-        <Link to={linkTo}><div className={styles.logo}/></Link>
-      </article>
-    </li>
+    <article className={`${styles.card} ${styles[cardClass]}`}>
+      <Link to={linkTo}><div className={styles.logo}/></Link>
+    </article>
   )
 }

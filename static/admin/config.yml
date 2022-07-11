@@ -23,6 +23,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ru", }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -38,6 +39,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "en", }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -53,6 +55,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ua", }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }

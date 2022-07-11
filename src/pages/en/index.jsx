@@ -14,12 +14,16 @@ export default function IndexPageEn({ data }) {
 
 export const query = graphql`
   query IndexPageEnQuery($lang: String = "en") {
-    allMarkdownRemark(filter: {frontmatter: {lang: {eq: $lang}}}) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {lang: {eq: $lang}}}
+      ) {
       edges {
         node {
           html
           frontmatter {
             lang
+            date(formatString: "DD.MM.YYYY")
             customSlug
             notReadyMessage
             title

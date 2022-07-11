@@ -31,6 +31,7 @@ export default function ArticlePageTemplate({ article, content }) {
                       <div className={styles.imageContainer}><MediaGatsbyImage image={article.image} /></div>
                       <h3 className={styles.title}>{article.title}</h3>
                       <div className={styles.textContainer} dangerouslySetInnerHTML={{ __html: content }} />
+                      <p className={styles.date}>{article.date}</p>
                     </div>
               }
             <Link to={`/${article.lang}#blog`} className={styles.backLink}>

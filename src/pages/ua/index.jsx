@@ -13,12 +13,16 @@ export default function IndexPageUa({ data }) {
 
 export const query = graphql`
   query IndexPageUaQuery($lang: String = "ua") {
-    allMarkdownRemark(filter: {frontmatter: {lang: {eq: $lang}}}) {
+    allMarkdownRemark(
+      filter: {frontmatter: {lang: {eq: $lang}}}
+      sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
       edges {
         node {
           html
           frontmatter {
             lang
+            date(formatString: "DD.MM.YYYY")
             customSlug
             notReadyMessage
             title

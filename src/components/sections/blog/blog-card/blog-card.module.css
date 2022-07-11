@@ -46,7 +46,7 @@
   padding: 16rem 16rem 0 16rem;
   text-align: start;
   box-sizing: border-box;
-
+  z-index: 1;
 }
 
 .about {

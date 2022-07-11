@@ -9,7 +9,8 @@ export default function BlogCard({ openHandler = () => false, data } ) {
       image: article.image,
       title: article.title,
       text: data.node.html,
-      notReadyMessage: article.notReadyMessage
+      notReadyMessage: article.notReadyMessage,
+      date: article.date
     },
     article.customSlug,
   )
