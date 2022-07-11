@@ -4,7 +4,7 @@ import PopupLayout from '../popup-layout/popup-layout';
 import MediaGatsbyImage from "../../ui/media-gatsby-image/media-gatsby-image";
 
 export default function ArticlePopup({isOpen, data, closeHandler}) {
-  
+
   if (!data?.title) return null
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
@@ -19,7 +19,6 @@ export default function ArticlePopup({isOpen, data, closeHandler}) {
               <div className={styles.textContainer} dangerouslySetInnerHTML={{__html: data.text}} />
             </div>
         }
-        
       </div>
     </PopupLayout>
 
