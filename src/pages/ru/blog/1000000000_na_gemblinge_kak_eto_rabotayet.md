@@ -2,7 +2,7 @@
 title: $1 000 000 000 на гемблинге — как это работает?
 customSlug: 1000000000_na_gemblinge_kak_eto_rabotayet
 lang: ru
-date: 2022-07-11T16:02:49.948Z
+date: 2022-10-06T16:02:49.948Z
 pageKeywordsForSEO: 'Гембла, партнерского, маркетинга, деньги'
 notReadyMessage: Статья совсем скоро будет в свободном доступе. Следите за анонсами :)
 image: /img/article-2.png

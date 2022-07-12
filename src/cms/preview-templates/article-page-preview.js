@@ -4,6 +4,8 @@ import BlogCard from '../../components/sections/blog/blog-card/blog-card';
 
 const ArticlePagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
+  console.log(data.date.getDate());
+  const handledDate = `${data.date.getDay()}.${data.date.getDate()}.${data.date.getFullYear()}`
   return (
     <div style={{
       display: 'flex',
@@ -11,7 +13,7 @@ const ArticlePagePreview = ({ entry }) => {
       alignItems: 'center'
     }}>
       <ArticlePageCmsTemplate
-        article={data}
+        article={{...data, date: handledDate}}
         content={data.body}
       />
       <BlogCard data={{

@@ -2,7 +2,7 @@
 title: "Арбитраж 2022: застой или время возможностей?"
 customSlug: arbitrazh_2022_zastoy_ili_vremya_vozmozhnostey
 lang: ua
-date: 2022-08-11T16:02:49.948Z
+date: 2022-10-07T16:02:49.948Z
 pageKeywordsForSEO: 'арбитража, трафика, рекламодателей, профит, нишу'
 notReadyMessage: ""
 image: /img/article-1.png

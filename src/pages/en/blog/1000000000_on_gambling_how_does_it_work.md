@@ -2,7 +2,7 @@
 title: $1,000,000,000 on gambling - how does it work?
 customSlug: 1000000000_on_gambling_how_does_it_work
 lang: en
-date: 2022-07-11T16:02:49.948Z
+date: 2022-10-06T16:02:49.948Z
 pageKeywordsForSEO: 'gambling, affiliate, webmasters'
 notReadyMessage: The article will be available for free very soon. Stay tuned for announcements :)
 image: /img/article-2.png
