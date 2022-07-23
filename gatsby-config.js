@@ -1,10 +1,42 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
-    description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+    title: "Trafflab",
+    description: "Trafflab",
+    siteUrl: `https://trafflab.com`
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allMarkdownRemark {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  date
+                }
+              }
+            }
+          }
+        }
+        `,
+        resolveSiteUrl: () => 'https://trafflab.com',
+        resolvePages: ({ allMarkdownRemark: { edges } }) => {
+          return edges.map((page) => ({
+            path: page.node.fields.slug,
+            date: page.node.frontmatter.date
+          }))
+        },
+        serialize: ({path, date}) => ({
+          url: path,
+          lastmod: date
+        })
+      }
+    },
     "gatsby-plugin-react-helmet",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support

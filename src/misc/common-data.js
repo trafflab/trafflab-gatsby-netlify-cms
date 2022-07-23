@@ -66,7 +66,7 @@ const ecosystemCardsData = [
   },
   {
     cardClass: 'edCard',
-    linkTo: '#education',
+    linkTo: 'https://traffacademy.com/',
   },
   {
     cardClass: 'appsCard',
