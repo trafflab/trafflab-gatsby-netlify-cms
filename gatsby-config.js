@@ -24,6 +24,7 @@ module.exports = {
           }
         }
         `,
+        output: '/',
         resolveSiteUrl: () => 'https://trafflab.com',
         resolvePages: ({ allMarkdownRemark: { edges } }) => {
           return edges.map((page) => ({
