@@ -1,7 +1,7 @@
 import * as React from "react"
 import plug from '../../../images/misc/plug.svg';
 
-export default function MediaImage({ image, image_480, image_webp, image_480_webp, no480, alt }) {
+export default function MediaImage({ image, image_480, image_webp, image_480_webp, no480, alt='trafflab' }) {
   return (
     <picture style={{height: "100%"}}>
   

@@ -45,7 +45,7 @@ export default function BackgroundItems() {
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [offset])
   
   return (
     <div className={styles.backgroundItems}>

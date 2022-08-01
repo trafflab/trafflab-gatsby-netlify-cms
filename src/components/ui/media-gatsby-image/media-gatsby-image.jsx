@@ -3,7 +3,7 @@ import * as styles from './media-gatsby-image.module.css';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Is480Context } from '../../../utils/contexts';
 
-export default function MediaGatsbyImage({ image_480=false, image, alt }) {
+export default function MediaGatsbyImage({ image_480=false, image, alt='trafflab' }) {
   const is480 = React.useContext(Is480Context);
 
   const handledImg = getImage(image) || image;
