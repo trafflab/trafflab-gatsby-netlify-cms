@@ -27,7 +27,7 @@ export default function PopupLayout({children, isOpen, closeHandler}) {
       <section
         onClick={overlayClose}
         className={styles.popupLayout}
-        style={{...animation, display: shouldMount ? 'flex' : 'none'}}
+        style={{...animation}}
 
       >
         {children}
