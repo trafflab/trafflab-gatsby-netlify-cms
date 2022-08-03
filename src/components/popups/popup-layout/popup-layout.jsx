@@ -10,18 +10,18 @@ export default function PopupLayout({children, isOpen, closeHandler}) {
   const overlayClose = (evt) => {
     if (evt.target.classList.contains(styles.popupLayout)) closeHandler()
   }
-  React.useEffect(() => {
-    if (isOpen) {
-      document.body.style.top = `-${window.scrollY}px`;
-      document.body.style.position = 'fixed';
-    } else {
-      const scrollY = document.body.style.top;
-      document.body.style.position = '';
-      document.body.style.top = '';
-      window.scrollTo(0, parseInt(scrollY || '0') * -1);
-    }
+  // React.useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.top = `-${window.scrollY}px`;
+  //     document.body.style.position = 'fixed';
+  //   } else {
+  //     const scrollY = document.body.style.top;
+  //     document.body.style.position = '';
+  //     document.body.style.top = '';
+  //     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  //   }
 
-  }, [isOpen])
+  // }, [isOpen])
   return (
     shouldMount &&
       <section
