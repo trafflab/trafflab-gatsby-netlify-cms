@@ -6,19 +6,22 @@ export default function PopupLayout({children, isOpen, closeHandler}) {
   
   const shouldMount = useDelayUnmountState(!!isOpen, 1000);
   const animation = isOpen ? {animation: 'openAniamtion 1s ease-out'} : {animation: 'closeAniamtion 1s ease-out forwards'}
+  const [scrollY, setScrollY] = React.useState(0)
 
   const overlayClose = (evt) => {
     if (evt.target.classList.contains(styles.popupLayout)) closeHandler()
   }
   React.useEffect(() => {
     if (isOpen) {
-      document.body.style.top = `-${window.scrollY}px`;
+      const offset = window.scrollY
+      setScrollY(offset)
+      document.body.style.top = `-${offset}px`;
       document.body.style.position = 'fixed';
     } else {
-      const scrollY = document.body.style.top;
+      console.log(scrollY);
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
       document.body.style.position = '';
       document.body.style.top = '';
-      // window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
 
   }, [isOpen])
