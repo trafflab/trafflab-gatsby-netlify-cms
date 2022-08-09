@@ -42,7 +42,6 @@ export default function BackgroundItems() {
     const ratioDevide = is480 ? 110 : 100;
     const handleScroll = () => setOffset((window.pageYOffset / documentHeight) * ratioDevide);
     handleScroll()
-
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [offset])
