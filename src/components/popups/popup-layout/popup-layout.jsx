@@ -1,6 +1,9 @@
 import * as React from "react"
 import * as styles from './popup-layout.module.css';
 import useDelayUnmountState from '../../../hooks/use-delay-unmount-state';
+import ReactDOM from "react-dom";
+
+const portalRoot = typeof document !== 'undefined' ? document.getElementById('___portal') : null
 
 export default function PopupLayout({children, isOpen, closeHandler}) {
   
@@ -10,27 +13,22 @@ export default function PopupLayout({children, isOpen, closeHandler}) {
   const overlayClose = (evt) => {
     if (evt.target.classList.contains(styles.popupLayout)) closeHandler()
   }
-  // React.useEffect(() => {
-  //   if (isOpen) {
-  //     document.body.style.top = `-${window.scrollY}px`;
-  //     document.body.style.position = 'fixed';
-  //   } else {
-  //     const scrollY = document.body.style.top;
-  //     document.body.style.position = '';
-  //     document.body.style.top = '';
-  //     window.scrollTo(0, parseInt(scrollY || '0') * -1);
-  //   }
-
-  // }, [isOpen])
+  React.useEffect(() => {
+    if (shouldMount) document.body.style.overflow = 'hidden'
+    else document.body.style.overflow = 'auto'
+  }, [shouldMount])
+  
   return (
-    shouldMount &&
-      <section
-        onClick={overlayClose}
-        className={styles.popupLayout}
-        style={{...animation, display: shouldMount ? 'flex' : 'none'}}
-
-      >
-        {children}
-      </section>
+    (shouldMount && portalRoot)
+      ? ReactDOM.createPortal((
+          <section
+            onClick={overlayClose}
+            className={styles.popupLayout}
+            style={{...animation}}
+          >
+            {children}
+          </section>
+        ), portalRoot)
+      : null
   )
 }

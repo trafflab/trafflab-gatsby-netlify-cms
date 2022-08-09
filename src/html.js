@@ -24,7 +24,7 @@ export default function HTML(props) {
                 backgroundColor: "#131313",
                 display: "flex",
                 justifyContent: "center",
-                position: "absolute",
+                position: "fixed",
                 width: '100%',
                 height: '100%',
                 left: 0,
@@ -40,10 +40,33 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           style={{
-            height: '100vh',
-            overflow: 'hidden'
+            // height: '100%',
+            // overflow: 'auto',
+            // position: 'fixed',
+            // top: 0,
+            // left: 0,
+            // right: 0,
+            // zIndex: 1,
+            overflow: "auto",
           }}
           dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        <div
+          key={`portal`}
+          id="___portal"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            right: 0,
+            width: 'max-content',
+            height: 'max-content',
+            overflow: 'auto',
+            zIndex: 2,
+          }}
         />
         {props.postBodyComponents}
       </body>
