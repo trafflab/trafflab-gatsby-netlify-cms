@@ -2,7 +2,8 @@ import * as React from "react"
 import * as styles from './popup-layout.module.css';
 import useDelayUnmountState from '../../../hooks/use-delay-unmount-state';
 import ReactDOM from "react-dom";
-const portalRoot = document !== 'undefined' ? document.getElementById('___portal') : null
+
+const portalRoot = typeof document !== 'undefined' ? document.getElementById('___portal') : null
 
 export default function PopupLayout({children, isOpen, closeHandler}) {
   
