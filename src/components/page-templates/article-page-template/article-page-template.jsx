@@ -33,7 +33,7 @@ export default function ArticlePageTemplate({ article, content }) {
                   ? <h1 className={styles.title}>{article.notReadyMessage}</h1>
                   : <div className={styles.content}>
                       <div className={styles.imageContainer}><MediaGatsbyImage alt={article.title} image={article.image} /></div>
-                      <h3 className={styles.title}>{article.title}</h3>
+                      <h1 className={styles.title}>{article.title}</h1>
                       <div className={styles.textContainer} dangerouslySetInnerHTML={{ __html: content }} />
                       <p className={styles.date}>{article.date}</p>
                     </div>
