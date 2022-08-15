@@ -38,6 +38,13 @@ module.exports = {
         })
       }
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://trafflab.com',
+        sitemap: 'https://trafflab.com/sitemap-0.xml',
+      }
+    },
     "gatsby-plugin-react-helmet",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
