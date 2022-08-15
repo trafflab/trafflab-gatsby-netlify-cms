@@ -6,10 +6,11 @@ import { Helmet } from "react-helmet";
 
 export default function IndexPageUa({ data }) {
   return (
-    <PageLayout pageTitle="Trafflab | Ua">
+    <PageLayout pageTitle="Профітна екосистема">
       <Helmet>
-        <meta name='description' content="Профітна екосистема для арбітражника будь-якого рівня"/>
+        <meta name='description' content="для арбітражника будь-якого рівня"/>
         <meta name='keywords' content="Trafflab, арбітраж, ecosystem, аффилейт-маркетинг"/>
+        <link rel="canonical" href="https://trafflab.com/ua" />
       </Helmet>
       <IndexPageTemplate blogData={data.allMarkdownRemark.edges} />
     </PageLayout>

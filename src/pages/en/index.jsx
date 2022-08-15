@@ -7,10 +7,12 @@ import { Helmet } from "react-helmet";
 export default function IndexPageEn({ data }) {
 
   return (
-    <PageLayout pageTitle="Trafflab | Eng">
+    <PageLayout pageTitle="Profitable ecosystem">
       <Helmet>
-        <meta name='description' content="Profitable ecosystem for affiliates of any level"/>
+        <meta name='description' content="for affiliates of any level"/>
         <meta name='keywords' content="Trafflab, affiliates, ecosystem, аффилейт-маркетинг"/>
+        <link rel="canonical" href="https://trafflab.com/en" />
+
       </Helmet>
       <IndexPageTemplate blogData={data.allMarkdownRemark.edges} />
     </PageLayout>
