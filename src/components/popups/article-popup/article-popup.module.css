@@ -83,6 +83,10 @@
   opacity: 0.8;
 }
 
+.textContainer img {
+  width: 664rem;
+}
+
 .date {
   color: var(--color-white);
   align-self: end;
@@ -138,6 +142,8 @@
     grid-area: image;
   }
 
+
+
   .backLink {
     width: 100%;
   }
@@ -148,6 +154,10 @@
   }
   .textContainer h2 {
     font-size: var(--font-size-body-big);
+  }
+
+  .textContainer img {
+    width: 100%;
   }
 
   .date {

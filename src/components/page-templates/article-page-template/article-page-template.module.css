@@ -74,6 +74,10 @@
   opacity: 0.8;
 }
 
+.textContainer img {
+  width: 1008rem;
+}
+
 .backLink {
   width: 200rem;
 }
@@ -127,6 +131,11 @@
   .textContainer h2 {
     font-size: var(--font-size-body-big);
   }
+
+  .textContainer img {
+    width: 100%;
+  }
+  
 
   .date {
     font-size: var(--font-size-body-small);
