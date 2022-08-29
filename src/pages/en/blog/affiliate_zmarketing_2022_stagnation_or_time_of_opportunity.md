@@ -3,7 +3,9 @@ title: "Affiliate marketing 2022: stagnation or time of opportunity?"
 customSlug: affiliate_zmarketing_2022_stagnation_or_time_of_opportunity
 lang: en
 date: 2022-10-07T16:02:49.948Z
-pageKeywordsForSEO: 'Affiliate, marketing, shocks'
+headTitle: "Affiliate marketing 2022: stagnation or time of opportunity?"
+headDescription: "Affiliate marketing 2022: stagnation or time of opportunity?"
+headKeywords: 'Affiliate, marketing, shocks'
 notReadyMessage: ""
 image: /img/article-1.png
 cardTitle: "Affiliate marketing 2022: stagnation or time of opportunity?"

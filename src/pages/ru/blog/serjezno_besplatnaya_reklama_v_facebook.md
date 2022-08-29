@@ -3,7 +3,9 @@ title: Серьезно, бесплатная реклама в Facebook?!
 customSlug: serjezno_besplatnaya_reklama_v_facebook
 lang: ru
 date: 2022-08-03T14:15:13.873Z
-pageKeywordsForSEO: Facebook, первобилл, трафик, бесплатно, реклама
+headTitle: Серьезно, бесплатная реклама в Facebook?!
+headDescription: Серьезно, бесплатная реклама в Facebook?!
+headKeywords: Facebook, первобилл, трафик, бесплатно, реклама
 image: /img/бесплатная-реклама-фб-1-.png
 cardTitle: Серьезно, бесплатная реклама в Facebook?!
 cardText: "Многим арбитражникам известно, что крупнейший источник трафика

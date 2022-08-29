@@ -3,7 +3,9 @@ title: "Битва FB-аккаунтов: за $1 или за $50"
 customSlug: bitva_fb_accauntov_za_1_ili_za_50
 lang: ru
 date: 2022-07-20T16:11:53.628Z
-pageKeywordsForSEO: FB, аккаунт, арбитраж, обучение, расходники
+headTitle: "Битва FB-аккаунтов: за $1 или за $50"
+headDescription: "Битва FB-аккаунтов: за $1 или за $50"
+headKeywords: FB, аккаунт, арбитраж, обучение, расходники
 image: /img/битва.png
 cardTitle: "Битва FB-аккаунтов: за $1 или за $50"
 cardText: "Главный расходник многих арбитражников — аккаунты. Качество аккаунта

@@ -3,7 +3,9 @@ title: "Как лить трафик на гео: Польша"
 customSlug: kak_lit_traffic_na_geo_polsha
 lang: ru
 date: 2022-07-27T10:53:37.541Z
-pageKeywordsForSEO: арбитраж, трафик, гео, польша, обучение
+headTitle: "Как лить трафик на гео: Польша"
+headDescription: "Как лить трафик на гео: Польша"
+headKeywords: арбитраж, трафик, гео, польша, обучение
 image: /img/как-лить2.png
 cardTitle: "Как лить трафик на гео: Польша"
 cardText: Понимание того, как мыслит пользователь, знание его болей и

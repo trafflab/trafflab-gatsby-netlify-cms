@@ -3,7 +3,9 @@ title: Словарь арбитражника
 customSlug: slovar_arbitrazhnika
 lang: ru
 date: 2022-07-07T15:38:46.133Z
-pageKeywordsForSEO: арбитраж, трафик, словарь, термины, обучение
+headTitle: Словарь арбитражника
+headDescription: Словарь арбитражника
+headKeywords: арбитраж, трафик, словарь, термины, обучение
 image: /img/380-390.png
 cardTitle: Словарь арбитражника
 cardText: В арбитраже трафика достаточно специфических терминов, понятий и

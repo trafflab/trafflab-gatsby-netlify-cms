@@ -24,7 +24,9 @@ collections:
       - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ru", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -41,7 +43,9 @@ collections:
       - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "en", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -58,7 +62,9 @@ collections:
       - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
       - { label: "Lang", name: "lang", widget: "hidden", default: "ua", }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Ключевые слова для поисковика(cлова через запятую)", name: "pageKeywordsForSEO", widget: "string" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
       - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
       - { label: "Article image", name: "image", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -22,8 +22,9 @@ export default function ArticlePageTemplate({ article, content }) {
   return (
     <>
       <Helmet>
-        <meta name='description' content={article.title}/>
-        <meta name='keywords' content={article.pageKeywordsForSEO}/>
+        <meta name='title' content={article.headTitle}/>
+        <meta name='description' content={article.headDescription}/>
+        <meta name='keywords' content={article.headKeywords}/>
       </Helmet>
       <div ref={pageRef} className={styles.page}>
         <Header openNavPopupHandler={openNavPopup} />
