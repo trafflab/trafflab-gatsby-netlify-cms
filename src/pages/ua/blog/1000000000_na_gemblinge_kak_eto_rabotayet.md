@@ -2,6 +2,7 @@
 title: $1 000 000 000 на гемблинге — как это работает?
 customSlug: 1000000000_na_gemblinge_kak_eto_rabotayet
 lang: ua
+type: article
 date: 2022-10-06T16:02:49.948Z
 headTitle: $1 000 000 000 на гемблинге — как это работает?
 headDescription: $1 000 000 000 на гемблинге — как это работает?

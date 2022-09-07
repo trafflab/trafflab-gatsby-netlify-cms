@@ -2,6 +2,7 @@
 title: "Обновления сферы: ключевые события в аффилейт-маркетинге"
 customSlug: oblovlenija_sfery_kluchevye_sobytiya_v_affilejt_marketinge
 lang: ru
+type: article
 date: 2022-08-17T14:51:55.100Z
 headTitle: "Обновления сферы: ключевые события в аффилейт-маркетинге"
 headDescription: "Обновления сферы: ключевые события в аффилейт-маркетинге"

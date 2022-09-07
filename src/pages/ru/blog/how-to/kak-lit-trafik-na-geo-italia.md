@@ -2,7 +2,7 @@
 title: "Как лить трафик на гео: Италия"
 customSlug: kak-lit-trafik-na-geo-italia
 lang: ru
-type: article
+type: seoArticle
 date: 2022-08-31T16:23:15.466Z
 headKeywords: трафик, арбитраж, аудитория, Италия, гемблинг
 headTitle: "Как лить трафик на гео: Италия"

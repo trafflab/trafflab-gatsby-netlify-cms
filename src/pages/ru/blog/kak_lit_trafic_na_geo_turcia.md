@@ -2,6 +2,7 @@
 title: "Как лить трафик на гео: Турция"
 customSlug: kak_lit_trafic_na_geo_turcia
 lang: ru
+type: article
 date: 2022-08-11T11:43:42.110Z
 headTitle: "Как лить трафик на гео: Турция"
 headDescription: "Как лить трафик на гео: Турция"

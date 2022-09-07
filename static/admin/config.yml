@@ -21,8 +21,9 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
-      - { label: "Lang", name: "lang", widget: "hidden", default: "ru", }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ru" }
+      - { label: "type", name: "type", widget: "hidden", default: "article" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
       - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
@@ -40,8 +41,9 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
-      - { label: "Lang", name: "lang", widget: "hidden", default: "en", }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "en" }
+      - { label: "type", name: "type", widget: "hidden", default: "article" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
       - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
@@ -59,8 +61,9 @@ collections:
     slug: "{{customSlug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "url статьи (без пробелов и знаков. Используй '_'", name: "customSlug", widget: "string" }
-      - { label: "Lang", name: "lang", widget: "hidden", default: "ua", }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ua" }
+      - { label: "type", name: "type", widget: "hidden", default: "article" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
       - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
@@ -71,4 +74,63 @@ collections:
       - { label: "Card title", name: "cardTitle", widget: "string" }
       - { label: "Card text", name: "cardText", widget: "string" }
       - { label: "Card image", name: "cardImage", widget: image }
-  
+  - name: "articlesRu-how-to"
+    label: "articlesRu-how-to"
+    folder: "src/pages/ru/blog/how-to"
+    create: true
+    slug: "{{customSlug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ru" }
+      - { label: "type", name: "type", widget: "hidden", default: "seoArticle" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }
+  - name: "articlesEn-how-to"
+    label: "articlesEn-how-to"
+    folder: "src/pages/en/blog/how-to"
+    create: true
+    slug: "{{customSlug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "en" }
+      - { label: "type", name: "type", widget: "hidden", default: "seoArticle" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }
+  - name: "articlesUa-how-to"
+    label: "articlesUa-how-to"
+    folder: "src/pages/ua/blog/how-to"
+    create: true
+    slug: "{{customSlug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "url статьи (без пробелов и знаков. Используй '-'", name: "customSlug", widget: "string" }
+      - { label: "Lang", name: "lang", widget: "hidden", default: "ua" }
+      - { label: "type", name: "type", widget: "hidden", default: "seoArticle" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "SEO. Ключевые слова для поисковика(cлова через запятую)", name: "headKeywords", widget: "string" }
+      - { label: "SEO. title(заголовок страницы) в head", name: "headTitle", widget: "string" }
+      - { label: "SEO. description(описание страницы) в head", name: "headDescription", widget: "string" }
+      - { label: "Not ready message", name: "notReadyMessage", required: false, widget: "string" }
+      - { label: "Article image", name: "image", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Card title", name: "cardTitle", widget: "string" }
+      - { label: "Card text", name: "cardText", widget: "string" }
+      - { label: "Card image", name: "cardImage", widget: image }

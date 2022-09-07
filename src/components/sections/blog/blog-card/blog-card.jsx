@@ -4,6 +4,7 @@ import MediaGatsbyImage from "../../../ui/media-gatsby-image/media-gatsby-image"
 
 export default function BlogCard({ openHandler = () => false, data } ) {
   const article = data?.node?.frontmatter ? data.node.frontmatter : data
+  console.log(data);
   const handleOpenPopup = () => openHandler(
     {
       image: article.image,
@@ -12,7 +13,7 @@ export default function BlogCard({ openHandler = () => false, data } ) {
       notReadyMessage: article.notReadyMessage,
       date: article.date
     },
-    article.customSlug,
+    data.node.fields.slug,
   )
   return (
     <article className={styles.card}>

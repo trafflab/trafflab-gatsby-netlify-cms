@@ -2,6 +2,7 @@
 title: Почему рекламодатель отклоняет твой трафик? [интервью]
 customSlug: pochemy_reklamodatel_otklonyaet_tvoy_trafik
 lang: ru
+type: article
 date: 2022-08-25T13:11:08.432Z
 headTitle: Почему рекламодатель отклоняет твой трафик? [интервью]
 headDescription: Почему рекламодатель отклоняет твой трафик? [интервью] 

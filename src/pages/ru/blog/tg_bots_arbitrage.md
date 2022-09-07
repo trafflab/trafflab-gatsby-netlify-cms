@@ -2,6 +2,7 @@
 title: TG-боты для арбитража
 customSlug: tg_bots_arbitrage
 lang: ru
+type: article
 date: 2022-08-30T18:25:43.074Z
 headKeywords: telegram, боты, арбитраж, трафик
 headTitle: TG-боты для арбитража

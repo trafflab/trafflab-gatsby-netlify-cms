@@ -23,7 +23,7 @@ const getRedirectLanguage = () => {
   }
 };
 
-export default function IndexPage() {
+export default function BlogPage() {
 
   useEffect(() => {
     let urlLang

@@ -2,6 +2,7 @@
 title: Словарь арбитражника
 customSlug: slovar_arbitrazhnika
 lang: ru
+type: article
 date: 2022-07-07T15:38:46.133Z
 headTitle: Словарь арбитражника
 headDescription: Словарь арбитражника

@@ -2,6 +2,7 @@
 title: "Как лить трафик на гео: Польша"
 customSlug: kak_lit_traffic_na_geo_polsha
 lang: ru
+type: article
 date: 2022-07-27T10:53:37.541Z
 headTitle: "Как лить трафик на гео: Польша"
 headDescription: "Как лить трафик на гео: Польша"

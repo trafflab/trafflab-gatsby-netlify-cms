@@ -2,6 +2,7 @@
 title: Серьезно, бесплатная реклама в Facebook?!
 customSlug: serjezno_besplatnaya_reklama_v_facebook
 lang: ru
+type: article
 date: 2022-08-03T14:15:13.873Z
 headTitle: Серьезно, бесплатная реклама в Facebook?!
 headDescription: Серьезно, бесплатная реклама в Facebook?!

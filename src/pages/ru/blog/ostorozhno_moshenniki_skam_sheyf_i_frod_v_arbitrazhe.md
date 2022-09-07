@@ -2,6 +2,7 @@
 title: Осторожно, мошенники! Скам, шейф и фрод в арбитраже
 customSlug: ostorozhno_moshenniki_skam_sheyf_i_frod_v_arbitrazhe
 lang: ru
+type: article
 date: 2022-06-29T16:02:49.948Z
 headTitle: Осторожно, мошенники! Скам, шейф и фрод в арбитраже
 headDescription: Осторожно, мошенники! Скам, шейф и фрод в арбитраже

@@ -2,6 +2,7 @@
 title: "Арбитраж 2022: застой или время возможностей?"
 customSlug: arbitrazh_2022_zastoy_ili_vremya_vozmozhnostey
 lang: ru
+type: article
 date: 2022-06-16T16:02:49.948Z
 headTitle: "Арбитраж 2022: застой или время возможностей?"
 headDescription: "Арбитраж 2022: застой или время возможностей?"

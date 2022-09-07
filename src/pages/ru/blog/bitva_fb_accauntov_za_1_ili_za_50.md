@@ -2,6 +2,7 @@
 title: "Битва FB-аккаунтов: за $1 или за $50"
 customSlug: bitva_fb_accauntov_za_1_ili_za_50
 lang: ru
+type: article
 date: 2022-07-20T16:11:53.628Z
 headTitle: "Битва FB-аккаунтов: за $1 или за $50"
 headDescription: "Битва FB-аккаунтов: за $1 или за $50"

@@ -20,10 +20,10 @@ export default function IndexPageEn({ data }) {
 }
 
 export const query = graphql`
-  query IndexPageEnQuery($lang: String = "en") {
+  query IndexPageEnQuery($lang: String = "en", $type: String = "article") {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {lang: {eq: $lang}}}
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
       ) {
       edges {
         node {
@@ -46,6 +46,9 @@ export const query = graphql`
                 gatsbyImageData(quality: 95, layout: CONSTRAINED)
               }
             }
+          }
+          fields {
+            slug
           }
         }
       }

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { navigate } from "gatsby";
-import Loader from "../../../components/common/loader/loader";
+import Loader from "../../../../components/common/loader/loader";
 
 const getRedirectLanguage = () => {
 
@@ -23,7 +23,7 @@ const getRedirectLanguage = () => {
   }
 };
 
-export default function BlogPage() {
+export default function HowToPage() {
 
   useEffect(() => {
     let urlLang

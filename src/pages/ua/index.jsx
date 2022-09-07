@@ -18,9 +18,9 @@ export default function IndexPageUa({ data }) {
 }
 
 export const query = graphql`
-  query IndexPageUaQuery($lang: String = "ua") {
+  query IndexPageUaQuery($lang: String = "ua", $type: String = "article") {
     allMarkdownRemark(
-      filter: {frontmatter: {lang: {eq: $lang}}}
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
       sort: { order: DESC, fields: [frontmatter___date] }
       ) {
       edges {
@@ -44,6 +44,9 @@ export const query = graphql`
                 gatsbyImageData(quality: 95, layout: CONSTRAINED)
               }
             }
+          }
+          fields {
+            slug
           }
         }
       }

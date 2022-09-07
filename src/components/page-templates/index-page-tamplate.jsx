@@ -32,7 +32,7 @@ export default function IndexPageTemplate({ blogData }) {
 
   const openArticlePopup = (articleData, slug) => {
     setArticleData(articleData)
-    changeUrl(`/${siteLang}/blog/${slug}`)
+    changeUrl(slug)
     setArticlePopupOpen(true);
   }  
   const closeArticlePopup = () => {

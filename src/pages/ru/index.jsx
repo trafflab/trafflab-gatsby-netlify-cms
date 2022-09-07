@@ -20,16 +20,17 @@ export default function IndexPageRu({ data }) {
 }
 
 export const query = graphql`
-  query IndexPageRuQuery($lang: String = "ru") {
+  query IndexPageRuQuery($lang: String = "ru", $type: String = "article") {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {lang: {eq: $lang}}}
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
       ) {
       edges {
         node {
           html
           frontmatter {
             lang
+            type
             date(formatString: "DD.MM.YYYY")
             customSlug
             notReadyMessage
@@ -46,6 +47,9 @@ export const query = graphql`
                 gatsbyImageData(quality: 95, layout: CONSTRAINED)
               }
             }
+          }
+          fields {
+            slug
           }
         }
       }
