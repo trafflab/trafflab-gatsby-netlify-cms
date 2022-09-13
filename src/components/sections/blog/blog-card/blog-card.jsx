@@ -4,7 +4,6 @@ import MediaGatsbyImage from "../../../ui/media-gatsby-image/media-gatsby-image"
 
 export default function BlogCard({ openHandler = () => false, data } ) {
   const article = data?.node?.frontmatter ? data.node.frontmatter : data
-  console.log(data);
   const handleOpenPopup = () => openHandler(
     {
       image: article.image,
