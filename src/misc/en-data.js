@@ -206,7 +206,21 @@ const enData = {
     agreement: "I agree to the personal data processing"
   },
   
-  successMessage: "your application has been sent"
+  successMessage: "your application has been sent",
+
+  blogPage: {
+    mainBlog: {
+      title: 'Blog',
+      about: 'Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments.',
+      linkHowTo: 'how to link'
+    },
+    howToBlog: {
+      title: 'HowTo blog',
+      about: 'Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments.',
+      noArticles: 'Articles will be available for free very soon. Stay tuned for announcements :)',
+      linkBlog: 'To blog',
+    }
+  }
 
 }
 

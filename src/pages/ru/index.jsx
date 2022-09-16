@@ -12,7 +12,6 @@ export default function IndexPageRu({ data }) {
         <meta name='description' content="для арбитражника любого уровня"/>
         <meta name='keywords' content="Trafflab, арбитраж, ecosystem, аффилейт-маркетинг"/>
         <link rel="canonical" href="https://trafflab.com/ru" />
-
       </Helmet>
       <IndexPageTemplate blogData={data.allMarkdownRemark.edges} />
     </PageLayout>

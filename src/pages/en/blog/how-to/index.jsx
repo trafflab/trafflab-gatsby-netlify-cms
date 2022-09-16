@@ -1,53 +1,57 @@
 import React, { useEffect } from "react";
-import { navigate } from "gatsby";
-import Loader from "../../../../components/common/loader/loader";
+import HowToPageTemplate from "../../../../components/page-templates/how-to-page-template/how-to-page-template";
+import PageLayout from "../../../../components/layouts/page-layout/page-layout";
+import { Helmet } from "react-helmet";
+import { graphql } from "gatsby";
 
-const getRedirectLanguage = () => {
-
-  if (typeof navigator === `undefined`) {
-    return "en";
-  }
-
-  const lang = navigator && navigator.language && navigator.language.split("-")[0];
-  if (!lang) return "en";
-
-  switch (lang) {
-    case "en":
-      return "en";
-    case "ru":
-      return "ru";
-    case "uk":
-      return "ua";
-    default:
-      return "en";
-  }
-};
-
-export default function HowToPage() {
-
-  useEffect(() => {
-    let urlLang
-    const savedLang = localStorage.getItem('lang')
-    if (savedLang) urlLang = localStorage.getItem('lang')
-    else {
-      urlLang = getRedirectLanguage();
-      localStorage.setItem('lang', urlLang);
-    }
-    
-    navigate(`/${urlLang}#blog`, {replace: true})
-
-  }, []);
+export default function HowToPage({ data }) {
 
   return (
-      <div style={{
-        height: '100vh',
-        widows: '100%',
-        backgroundColor: 'var(--color-dark-2)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        }}>
-        <Loader />
-      </div>
+    <PageLayout pageTitle='Trafflab howTo'>
+      <Helmet>
+        <meta name='description' content="Актуальные новости, рекомендации по заливу, мануалы, инсайдерская информация из закрытых источников аффилейт-маркетинга. Читай блог TraffLab и будь в курсе всех событий рынка"/>
+        <meta name='keywords' content="Trafflab, арбитраж, ecosystem, аффилейт-маркетинг, новости, мануалы, инсайдерская информация, рекомендации, блог"/>
+        <link rel="canonical" href="https://trafflab.com/ru" />
+      </Helmet>
+      <HowToPageTemplate blogData={data.allMarkdownRemark.edges}/>
+    </PageLayout>
   ) 
 };
+
+export const query = graphql`
+  query HowToPageEnQuery($lang: String = "en", $type: String = "seoArticle") {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
+      ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            lang
+            type
+            date(formatString: "DD.MM.YYYY")
+            customSlug
+            notReadyMessage
+            title
+            image {
+              childImageSharp {
+                gatsbyImageData(quality: 95, layout: CONSTRAINED)
+              }
+            }
+            cardTitle
+            cardText
+            cardImage {
+              childImageSharp {
+                gatsbyImageData(quality: 95, layout: CONSTRAINED)
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
