@@ -11,6 +11,9 @@ export default function IndexPageUa({ data }) {
         <meta name='description' content="для арбітражника будь-якого рівня"/>
         <meta name='keywords' content="Trafflab, арбітраж, ecosystem, аффилейт-маркетинг"/>
         <link rel="canonical" href="https://trafflab.com/ua" />
+        <link rel="alternate" hreflang="ru" href="https://trafflab.com/ru" />
+        <link rel="alternate" hreflang="en" href="https://trafflab.com/en" />
+        <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua" />
       </Helmet>
       <IndexPageTemplate blogData={data.allMarkdownRemark.edges} />
     </PageLayout>

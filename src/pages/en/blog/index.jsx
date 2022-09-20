@@ -12,6 +12,9 @@ export default function BlogPage({ data }) {
         <meta name='description' content="Актуальные новости, рекомендации по заливу, мануалы, инсайдерская информация из закрытых источников аффилейт-маркетинга. Читай блог TraffLab и будь в курсе всех событий рынка"/>
         <meta name='keywords' content="Trafflab, арбитраж, ecosystem, аффилейт-маркетинг, новости, мануалы, инсайдерская информация, рекомендации, блог"/>
         <link rel="canonical" href="https://trafflab.com/ru" />
+        <link rel="alternate" hreflang="ru" href="https://trafflab.com/ru/blog" />
+        <link rel="alternate" hreflang="en" href="https://trafflab.com/en/blog" />
+        <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua/blog" />
       </Helmet>
       <BlogPageTemplate blogData={data.allMarkdownRemark.edges}/>
     </PageLayout>
