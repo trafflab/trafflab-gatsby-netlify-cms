@@ -3,18 +3,22 @@ import { graphql } from 'gatsby';
 import PageLayout from '../../components/layouts/page-layout/page-layout';
 import ArticlePageTemplate from '../../components/page-templates/article-page-template/article-page-template';
 
-export function ArticlePageCmsTemplate({ article, content }) {
+export function ArticlePageCmsTemplate({ article, content, path='adminPanelPath' }) {
   return (
     <>
       <PageLayout>
-        <ArticlePageTemplate article={article} content={content} />
+        <ArticlePageTemplate article={article} content={content} path={path} />
       </PageLayout>
     </>
   )
 }
 
 export default function ArticlePage({ data }) {
-  return <ArticlePageCmsTemplate article={data.markdownRemark.frontmatter} content={data.markdownRemark.html}/>
+  return <ArticlePageCmsTemplate 
+    article={data.markdownRemark.frontmatter}
+    content={data.markdownRemark.html}
+    path={data.markdownRemark.fields.slug}
+  />
 }
 
 export const query = graphql`
@@ -34,6 +38,9 @@ export const query = graphql`
             gatsbyImageData(quality: 95, layout: CONSTRAINED)
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }

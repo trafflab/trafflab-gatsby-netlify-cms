@@ -10,7 +10,7 @@ import { NavPopup } from '../../../components/popups';
 import BasicButton from '../../../components/ui/basic-button/basic-button';
 import { Link } from 'gatsby';
 
-export default function ArticlePageTemplate({ article, content,  }) {
+export default function ArticlePageTemplate({ article, content, path }) {
   
   const pageRef = React.useRef()
   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
@@ -19,12 +19,14 @@ export default function ArticlePageTemplate({ article, content,  }) {
   const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
   const openNavPopup = () =>  setNavPopupOpen(true);
   const closeNavPopup = () => setNavPopupOpen(false);
+
   return (
     <>
       <Helmet>
-        <meta name='title' content={article.headTitle}/>
+        <title>{article.headTitle} | Trafflab.com</title>
         <meta name='description' content={article.headDescription}/>
         <meta name='keywords' content={article.headKeywords}/>
+        <link rel="canonical" href={`https://trafflab.com${path}`} />
       </Helmet>
       <div ref={pageRef} className={styles.page}>
         <Header openNavPopupHandler={openNavPopup} />
