@@ -63,6 +63,16 @@
   justify-content: center;
   border-radius: 50%;
   transition: background-color 0.35s ease-out;
+  background-color: var(--color-red-3);
+}
+
+.sendButton:hover {
+  background-color: var(--color-red-2);
+  cursor: pointer;
+}
+
+.sendButton:disabled {
+  background-color: var(--color-gray-2);
 }
 
 .buttonIcon {
@@ -74,6 +84,7 @@
   transform: rotate(90deg);
 }
 
+
 .buttonText {
   display: none;
   font-family: var(--font-basic);
@@ -82,14 +93,7 @@
   font-weight: 700;
 }
 
-.sendButton:hover {
-  background-color: var(--color-red-2);
-  cursor: pointer;
-}
 
-.sendButton:active {
-  background-color: var(--color-red-3);
-}
 
 
 @media screen and (max-width: 480px) {
@@ -143,7 +147,6 @@
     padding: 0;
     height: 40rem;
     
-    background-color: var(--color-red-1);
     transition: background-color 0.35s ease-out;
   
   }

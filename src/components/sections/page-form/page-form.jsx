@@ -73,7 +73,7 @@ export default function PageForm() {
             <button
               className={styles.sendButton}
               disabled={!isValid}
-              style={isValid ? {} : {backgroundColor: 'var(--color-gray-2)'}}
+              // style={isValid ? {} : {backgroundColor: 'var(--color-gray-2)'}}
               type='button'
               onClick={handleSendClick}
             >
