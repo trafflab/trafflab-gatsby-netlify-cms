@@ -20,7 +20,8 @@ import blogArticle1_webp from '../images/blog-article-popup/article-1.webp'
 import blogArticle2_webp from '../images/blog-article-popup/article-2.webp'
 import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
-
+import pageFormTextImg from '../images/page-form/text-ua.png';
+import pageFormTextImg__webp from '../images/page-form/text-ua.webp';
 
 const uaData = {
   lang: 'ua',
@@ -274,7 +275,9 @@ const uaData = {
   pageForm: {
     text: "Залиште заявку та менеджер зв'яжеться з вами найближчим часом",
     nameInput: "Ім'я",
-    button480: 'Приєднатися'
+    button480: 'Приєднатися',
+    textImg: pageFormTextImg,
+    textImgWebp: pageFormTextImg__webp,
   },
 
   footer: {

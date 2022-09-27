@@ -20,7 +20,8 @@ import blogArticle1_webp from '../images/blog-article-popup/article-1.webp'
 import blogArticle2_webp from '../images/blog-article-popup/article-2.webp'
 import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
-
+import pageFormTextImg from '../images/page-form/text-ru.png';
+import pageFormTextImg__webp from '../images/page-form/text-ru.webp';
 
 const ruData = {
   lang: 'ru',
@@ -274,7 +275,9 @@ const ruData = {
   pageForm: {
     text: 'Оставьте заявку и менеджер свяжется с вами в ближайшее время',
     nameInput: 'Имя',
-    button480: 'Присоединиться'
+    button480: 'Присоединиться',
+    textImg: pageFormTextImg,
+    textImgWebp: pageFormTextImg__webp,
   },
 
   footer: {
@@ -295,7 +298,8 @@ const ruData = {
     subtitle: 'Оставьте заявку и менеджер свяжется с вами в ближайшее время',
     nameInput: 'Имя',
     button480: 'Отправить',
-    agreement: 'Я согласен на обработку персональных данных'
+    agreement: 'Я согласен на обработку персональных данных',
+
   },
 
   successMessage: 'Ваша заявка отправлена',

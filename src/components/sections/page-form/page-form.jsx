@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from './page-form.module.css';
-import { LangContext, MessagesContext, SiteLangContext } from "../../../utils/contexts";
+import { LangContext, MessagesContext } from "../../../utils/contexts";
 import { sendFormToTg } from '../../../utils//api'
 import useForm  from '../../../hooks/use-form'
 import MediaImage from "../../ui/media-image/media-image";
@@ -16,11 +16,9 @@ export default function PageForm() {
 
   const { values, handleChange, isValid, handleReset} = useForm()
   const [ momentWindow, setMomentWindow ] = React.useState({});
-
-
-  const data = React.useContext(LangContext);
+  const [sectonData, setSectonData] = React.useState({});
+  const data = React.useContext(LangContext).pageForm;
   const successMessageHandler = React.useContext(MessagesContext);
-  const lang = React.useContext(SiteLangContext);
   const handleSendClick = () => {
     sendFormToTg(values.name, values.tg)
       .then(res => {
@@ -34,9 +32,14 @@ export default function PageForm() {
   }
 
   React.useEffect(() => {
-    setMomentWindow(window)
-    values.phone = ''
+    setMomentWindow(window);
+    values.phone = '';
+    
   }, [])
+
+  React.useEffect(() => {
+    setSectonData(data)
+  }, [data.lang])
 
 
   return (
@@ -44,12 +47,14 @@ export default function PageForm() {
       <div className={styles.content}>
         
         <div className={styles.formContainer}>
-          <div data-lang={lang} className={styles.textSvg} />
-          <p className={styles.text}>{data.pageForm.text}</p>
+          <div className={styles.textImg}>
+            <MediaImage image_webp={sectonData.textImg__webp} image_480_webp={sectonData.textImg__webp} image={sectonData.textImg} image_480={sectonData.textImg} />
+          </div>
+          <p className={styles.text}>{sectonData.text}</p>
           <form className={styles.form}>
             <BasicInput
               name='name'
-              placeholder={data.pageForm.nameInput}
+              placeholder={sectonData.nameInput}
               value={values.name}
               onChange={handleChange}
               minLength={1}
@@ -73,7 +78,7 @@ export default function PageForm() {
               onClick={handleSendClick}
             >
               <div className={styles.buttonIcon}/>
-              <span className={styles.buttonText}>{data.pageForm.button480}</span>
+              <span className={styles.buttonText}>{sectonData.button480}</span>
             </button>
           </form>
         </div>

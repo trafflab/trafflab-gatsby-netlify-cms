@@ -20,6 +20,9 @@ import blogArticle1_webp from '../images/blog-article-popup/article-1.webp'
 import blogArticle2_webp from '../images/blog-article-popup/article-2.webp'
 import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
+import pageFormTextImg from '../images/page-form/text-en.png';
+import pageFormTextImg__webp from '../images/page-form/text-en.webp';
+
 
 const enData = {
   lang: "en",
@@ -182,7 +185,9 @@ const enData = {
   pageForm: {
     text: "Leave a request and the manager will contact you soon",
     nameInput: "Name",
-    button480: "Join"
+    button480: "Join",
+    textImg: pageFormTextImg,
+    textImgWebp: pageFormTextImg__webp,
   },
 
   footer: {
