@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from './page-form.module.css';
-import { LangContext, MessagesContext } from "../../../utils/contexts";
+import { LangContext, MessagesContext, SiteLangContext } from "../../../utils/contexts";
 import { sendFormToTg } from '../../../utils//api'
 import useForm  from '../../../hooks/use-form'
 import MediaImage from "../../ui/media-image/media-image";
@@ -15,12 +15,12 @@ import BasicInput from "../../ui/basic-input/basic-input";
 export default function PageForm() {
 
   const { values, handleChange, isValid, handleReset} = useForm()
-  const [momentWindow, setMomentWindow] = React.useState({});
+  const [ momentWindow, setMomentWindow ] = React.useState({});
 
 
   const data = React.useContext(LangContext);
   const successMessageHandler = React.useContext(MessagesContext);
-
+  const lang = React.useContext(SiteLangContext);
   const handleSendClick = () => {
     sendFormToTg(values.name, values.tg)
       .then(res => {
@@ -44,9 +44,9 @@ export default function PageForm() {
       <div className={styles.content}>
         
         <div className={styles.formContainer}>
-          {data.lang === 'ru' && <div data-lang='ru' className={styles.textSvg} />}
-          {data.lang === 'ua' && <div data-lang='ua' className={styles.textSvg} />}
-          {data.lang === 'en' && <div data-lang='en' className={styles.textSvg} />}
+          {lang === 'ru' && <div data-lang='ru' className={styles.textSvg} />}
+          {lang === 'ua' && <div data-lang='ua' className={styles.textSvg} />}
+          {lang === 'en' && <div data-lang='en' className={styles.textSvg} />}
           <p className={styles.text}>{data.pageForm.text}</p>
           <form className={styles.form}>
             <BasicInput
