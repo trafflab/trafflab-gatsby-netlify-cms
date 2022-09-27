@@ -44,9 +44,7 @@ export default function PageForm() {
       <div className={styles.content}>
         
         <div className={styles.formContainer}>
-          {lang === 'ru' && <div data-lang='ru' className={styles.textSvg} />}
-          {lang === 'ua' && <div data-lang='ua' className={styles.textSvg} />}
-          {lang === 'en' && <div data-lang='en' className={styles.textSvg} />}
+          <div data-lang={lang} className={styles.textSvg} />
           <p className={styles.text}>{data.pageForm.text}</p>
           <form className={styles.form}>
             <BasicInput
