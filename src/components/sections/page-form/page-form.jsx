@@ -47,7 +47,7 @@ export default function PageForm() {
       <div className={styles.content}>
 
         <div className={styles.formContainer}>
-          <div className={`${styles.textSvg} ${styles['textSvg' + data.lang]}`} />
+          <div data-lang={data.lang} className={styles.textSvg} />
           <p className={styles.text}>{data.pageForm.text}</p>
           <form className={styles.form}>
             <BasicInput
@@ -68,18 +68,16 @@ export default function PageForm() {
               isRequired={true}
               
             />
-            {is480
-              ? <BasicButton
-                  isActive={isValid}
-                  text={data.pageForm.button480}
-                  handler={handleSendClick}
-                />
-              : <ArrowButton
-                  isActive={isValid}
-                  direction='right'
-                  handler={handleSendClick}
-                />
-            }
+            <button
+              className={styles.sendButton}
+              disabled={!isValid}
+              style={isValid ? {} : {backgroundColor: 'var(--color-gray-2)'}}
+              type='button'
+              onClick={handleSendClick}
+            >
+              <div className={styles.buttonIcon}/>
+              <span className={styles.buttonText}>{data.pageForm.button480}</span>
+            </button>
           </form>
         </div>
 

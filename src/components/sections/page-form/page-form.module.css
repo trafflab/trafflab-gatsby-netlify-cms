@@ -32,18 +32,18 @@
   background-repeat: no-repeat;
 }
 
-.textSvgru {
+.textSvg[data-lang=ru] {
   background-image: url(../../../images/page-form/text-ru.svg);
-
 }
 
-.textSvgen {
+.textSvg[data-lang=ua] {
+  background-image: url(../../../images/page-form/text-ua.svg);
+}
+
+.textSvg[data-lang=en] {
   background-image: url(../../../images/page-form/text-en.svg);
 }
 
-.textSvgua {
-  background-image: url(../../../images/page-form/text-ua.svg);
-}
 
 .text {
   font-family: var(--font-basic);
@@ -64,6 +64,43 @@
 .imageContainer {
   width: 533rem;
   height: 400rem;
+}
+
+.sendButton {
+  border: none;
+  width: 60rem;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.35s ease-out;
+}
+
+.buttonIcon {
+  width: 32rem;
+  height: 32rem;
+  background-image: url(../../../images/icons/arrow-up.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+
+.buttonText {
+  display: none;
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-middle);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.sendButton:hover {
+  background-color: var(--color-red-2);
+  cursor: pointer;
+}
+
+.sendButton:active {
+  background-color: var(--color-red-3);
 }
 
 
@@ -106,5 +143,28 @@
   .imageContainer {
     width: 100%;
     height: 187rem;
+  }
+
+  .sendButton {
+    width: 100%;
+    height: 62rem;
+    border-radius: 40rem;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+    
+    background-color: var(--color-red-1);
+    transition: background-color 0.35s ease-out;
+  
+  }
+  
+  .buttonIcon {
+    display: none;
+  }
+  
+  .buttonText {
+    display: inline;
   }
 }
