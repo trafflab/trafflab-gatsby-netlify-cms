@@ -3,7 +3,7 @@ title: Схемный трафик. От и до
 customSlug: shemnij_traffic_ot_i_do
 lang: ru
 type: seoArticle
-date: 2022-09-23T08:46:34.984Z
+date: 2022-09-29T15:06:59.319Z
 headKeywords: схемный, трафик, арбитраж, гемблинг, партнерка
 headTitle: Схемный трафик. От и до
 headDescription: Схемы — один из вариантов привлечения пользователей на продукты
