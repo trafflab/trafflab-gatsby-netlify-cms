@@ -14,7 +14,8 @@ export default function Opening({openFormPopupHandler}) {
 
         <div className={styles.textContainer}>
           <h1 className={styles.title}>{is480 ? data.title480 : data.title}</h1>
-          <p className={styles.subtitle}>{data.subtitle}</p>
+          <p className={styles.subtitle1}>{data.subtitle1}</p>
+          <p className={styles.subtitle2}>{data.subtitle2}</p>
           <div className={styles.buttonContainer}>
             <BasicButton handler={openFormPopupHandler} text={is480 ? data.button480 : data.button}/>
           </div>

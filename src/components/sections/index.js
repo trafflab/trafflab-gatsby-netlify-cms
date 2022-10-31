@@ -9,6 +9,7 @@ import Blog from "./blog/blog";
 import PartnersMarquee from "./partners-marquee/partners-marquee";
 import Vacancies from "./vacancies/vacancies";
 import PageForm from './page-form/page-form';
+import Statistics from "./statistics/statistics";
 
 export {
   Header,
@@ -22,5 +23,5 @@ export {
   PartnersMarquee,
   Vacancies,
   PageForm,
-  
+  Statistics
 }

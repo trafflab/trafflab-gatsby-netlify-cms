@@ -27,7 +27,7 @@ const ruData = {
   lang: 'ru',
   articlePageBackButton: 'К блогу',
   navList: {
-    sources: 'Источники',
+    sources: 'CPA-платформа:',
     ecosystem: 'Экосистема',
     blog: 'Блог',
     partners: 'Партнёры',
@@ -39,12 +39,32 @@ const ruData = {
   upButton: 'Наверх',
 
   openingSection: {
-    title: 'Профитная экосистема',
+    title: 'CPA-сеть:',
     title480: 'Лучшие условия',
-    subtitle: 'для арбитражника любого уровня',
+    subtitle1: 'Партнерка для профитного залива на iGaming и Ed-Tech.',
+    subtitle2: 'Авторские технологии для увеличения конверта',
     button: 'Стать партнером',
     button480: 'Присоединиться',
   },
+
+  statistics: [
+    {
+      stat: '7+ лет',
+      statDisc: 'экспертизы в трафике',
+    },
+    {
+      stat: '600+',
+      statDisc: 'аффилиатов',
+    },
+    {
+      stat: '400+',
+      statDisc: 'рекламодателей',
+    },
+    {
+      stat: '35+',
+      statDisc: 'сотрудников по всему миру',
+    }
+  ],
 
   trafficSourcesSection: {
     text: 'Любой источник. Любое гео. Любые связки. Привлекай лиды – Trafflab сделает всё остальное.',

@@ -30,11 +30,20 @@
   line-height: 1.15;
 }
 
-.subtitle {
+.subtitle1 {
   color: var(--color-gray-2);
   font-size: 22rem;
   font-weight: 300;
-  width: 280rem;
+  width: 530rem;
+  margin-bottom: 0rem;
+  line-height: 1.55;
+}
+
+.subtitle2 {
+  color: var(--color-gray-2);
+  font-size: 22rem;
+  font-weight: 300;
+  width: 530rem;
   margin-bottom: 32rem;
   line-height: 1.55;
 }
