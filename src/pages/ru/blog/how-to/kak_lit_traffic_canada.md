@@ -3,7 +3,7 @@ title: "Как лить трафик на ГЕО: Канада"
 customSlug: kak_lit_traffic_canada
 lang: ru
 type: seoArticle
-date: 2022-10-31T16:02:24.526Z
+date: 2022-11-08T17:25:01.672Z
 headKeywords: арбитраж, трафик, гемблинг, Канада, офферы
 headTitle: "Как лить трафик на ГЕО: Канада"
 headDescription: Канада — прекрасное место для человека любого возраста. Сюда
