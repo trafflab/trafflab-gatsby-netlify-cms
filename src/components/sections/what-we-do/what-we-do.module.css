@@ -22,7 +22,7 @@
   font-size: var(--font-size-big);
   font-family: var(--font-basic);
   font-weight: 700;
-  width: 400rem;
+  width: 593rem;
   line-height: 1.22;
 
 }
@@ -36,7 +36,7 @@
 }
 
 .buttonContainer {
-  width: 234rem;
+  width: 280rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -54,7 +54,7 @@
     margin-bottom: 24rem;
     font-size: var(--font-size-middle);
     line-height: 1.4;
-    width: max-content;
+    width: 100%;
   }
 
   .textContainer {
@@ -73,7 +73,7 @@
   }
   
   .buttonContainer {
-    width: 177rem;
+    width: 230rem;
     align-self: center;
   }
 }

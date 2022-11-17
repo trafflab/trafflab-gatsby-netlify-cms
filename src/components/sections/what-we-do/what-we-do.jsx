@@ -4,6 +4,7 @@ import WhatWeDoCard from "./what-we-do-card/what-we-do-card";
 import BasicButton from "../../ui/basic-button/basic-button";
 import { Is480Context, LangContext } from "../../../utils/contexts";
 import WhatWeDoImage from "./what-we-do-image/what-we-do-image";
+import TgButton from "../../common/tg-button/tg-button";
 
 import phoneIcon from '../../../images/icons/phone-1.svg';
 import calendarIcon from '../../../images/icons/calendar-1.svg';
@@ -37,7 +38,7 @@ export default function WhatWeDo({openFormPopupHandler}) {
             {!is480 && <WhatWeDoCard icon={redCalendarIcon} text={data.cards[6]} />}
           </ul>
           <div className={styles.buttonContainer}>
-            <BasicButton text={data.button} handler={openFormPopupHandler}/>
+            <TgButton text={data.button}/>
           </div>
         </div>
 

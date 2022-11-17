@@ -45,6 +45,11 @@ body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+pre {
+  white-space: pre-wrap;
+  font-family: 'HeliosExt', 'Roboto', Helvetica, Arial, sans-serif;
+}
+
 
 body::after {
   content: '';

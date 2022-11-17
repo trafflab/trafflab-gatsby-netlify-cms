@@ -1,3 +1,4 @@
+import { navigate } from "gatsby";
 export const changeRelativeUrlLang = (lang) => {
   const path = typeof window !== 'undefined' ? window.location.pathname : '';
   const pathList = path.split('/')

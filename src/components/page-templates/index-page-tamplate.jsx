@@ -10,7 +10,8 @@ import {
   PartnersMarquee,
   Vacancies,
   PageForm,
-  Statistics
+  Statistics,
+  Pro
 } from '../sections';
 import { changeUrl } from "../../utils/utils";
 import { SiteLangContext } from "../../utils/contexts";
@@ -46,6 +47,7 @@ export default function IndexPageTemplate({ blogData }) {
     <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
       <Statistics />
       <WhatWeDo openFormPopupHandler={openFormPopup}/>
+      <Pro />
       <CountriesMarquee />
       <PageForm />
       <TrafficSources />

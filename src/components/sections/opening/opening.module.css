@@ -68,7 +68,7 @@
   .subtitle {
     font-size: var(--font-size-body-middle);
     margin-bottom: 24rem;
-    width: max-content;
+    /* width: max-content; */
   }
 
   .textContainer {
@@ -79,6 +79,21 @@
 
   .buttonContainer {
     width: 177rem;
+  }
+
+  .subtitle1 {
+    font-size: var(--font-size-body-middle);
+    margin-bottom: 0;
+    width: auto;
+    text-align: center;
+  }
+  
+  .subtitle2 {
+    font-size: var(--font-size-body-middle);
+    margin-bottom: 18rem;
+    width: auto;
+    text-align: center;
+
   }
 
 }
