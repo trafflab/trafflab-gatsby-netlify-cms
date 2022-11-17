@@ -9,9 +9,9 @@ export default function CountriesMarquee() {
       <div className={styles.content}>
         <Marquee gradient={false} >
           <ul className={styles.list}>
-            <li className={styles.listElement}>
+            {/* <li className={styles.listElement}>
               <p className={styles.countryName}>Ukraine</p>
-            </li>
+            </li> */}
             <li className={styles.listElement}>
               <div className={styles.dot} />
             </li>
@@ -36,9 +36,10 @@ export default function CountriesMarquee() {
             <li className={styles.listElement}>
               <p className={styles.countryName}>Indonesia</p>
             </li>
-            <li className={styles.listElement}>
+            {/* <li className={styles.listElement}>
               <div className={styles.dot} />
-            </li>
+            </li> */}
+            {/* del ue */}
           </ul>
         </Marquee>
       </div>

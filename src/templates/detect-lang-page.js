@@ -17,8 +17,9 @@ const getRedirectLanguage = () => {
       return "en";
     case "ru":
       return "ru";
-    case "uk":
-      return "ua";
+    // case "uk":
+    //   return "ua";
+    // del ue
     default:
       return "en";
   }

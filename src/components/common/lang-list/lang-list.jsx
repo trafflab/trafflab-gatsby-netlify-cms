@@ -22,7 +22,8 @@ export default function LangList() {
     <div className={styles.langList}>
       <select value={lang} onChange={handleChange} className={styles.select}>
         <option value='en'>EN</option>
-        <option value='ua'>UA</option>
+        {/* <option value='ua'>UA</option> */}
+        {/* del ue  */}
         <option value='ru'>RU</option>
       </select>
     </div>

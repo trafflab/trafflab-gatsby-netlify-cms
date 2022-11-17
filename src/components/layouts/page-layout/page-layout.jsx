@@ -8,13 +8,16 @@ import Helmet from "react-helmet";
 import favicon from '../../../images/misc/favicon.ico'
 import enData from '../../../misc/en-data'
 import ruData from '../../../misc/ru-data'
-import uaData from '../../../misc/ua-data'
+// import uaData from '../../../misc/ua-data'
+// del ue
 import { YMInitializer } from 'react-yandex-metrika';
 
 export default function PageLayout({ children, pageTitle = 'Trafflab' }) {
   const is480 = useIs480()
   const siteLang = getUrlLang()
-  const langData = siteLang === 'ru' ? ruData : siteLang === 'en' ? enData : uaData
+  // const langData = siteLang === 'ru' ? ruData : siteLang === 'en' ? enData : uaData
+  // del ue
+  const langData = siteLang === 'ru' ? ruData : enData
 
   React.useEffect(() => {
     if (localStorage.getItem('lang') !== 'ru' ) localStorage.setItem('lang', 'ru');
@@ -24,7 +27,9 @@ export default function PageLayout({ children, pageTitle = 'Trafflab' }) {
     <SiteLangContext.Provider value={siteLang}>
       <Is480Context.Provider value={is480}>
         <LangContext.Provider value={langData}>
-          <Helmet htmlAttributes={{lang: siteLang === 'ua' ? 'uk' : siteLang}}>
+          {/* <Helmet htmlAttributes={{lang: siteLang === 'ua' ? 'uk' : siteLang}}> */}
+          {/* del ue */}
+          <Helmet htmlAttributes={{lang: siteLang}}>
             <meta charSet="utf-8" />
             <meta name="author" content="Trafflab" />
             <link rel="icon" type="image/x-icon" href={favicon}></link>

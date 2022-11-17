@@ -17,8 +17,9 @@ const getRedirectLanguage = () => {
       return "en";
     case "ru":
       return "ru";
-    case "uk":
-      return "ua";
+    // case "uk":
+    //   return "ua"; 
+    // del ue
     default:
       return "en";
   }
@@ -28,8 +29,11 @@ export default function IndexPage() {
 
   useEffect(() => {
     let urlLang
-    const savedLang = localStorage.getItem('lang')
-    if (savedLang) urlLang = localStorage.getItem('lang')
+    let savedLang = localStorage.getItem('lang')
+
+    savedLang = savedLang === 'ua' ? 'ru' : savedLang // del ue
+
+    if (savedLang) urlLang = savedLang
     else {
       urlLang = getRedirectLanguage();
       localStorage.setItem('lang', urlLang);
