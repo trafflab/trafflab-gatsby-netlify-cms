@@ -63,6 +63,7 @@ export default function BackgroundItems() {
       <div className={`${styles.blurredBubble4} ${styles['blurredBubble4' + langPrefix]}`}><MediaImage image_webp={bubble4_webp} image_480_webp={bubble4_480_webp} image={bubble4} image_480={bubble4_480}/></div>
       <div className={`${styles.blurredBubble5} ${styles['blurredBubble5' + langPrefix]}`}><MediaImage image_webp={bubble5_webp} image_480_webp={bubble5_480_webp} image={bubble5} image_480={bubble5_480}/></div>
       <div className={`${styles.blurredBubble6} ${styles['blurredBubble6' + langPrefix]}`}><MediaImage image_webp={bubble6_webp} image_480_webp={bubble6_480_webp} image={bubble6} image_480={bubble6_480}/></div>
+      <div className={`${styles.blurredBubble7} ${styles['blurredBubble3' + langPrefix]}`}><MediaImage image_webp={bubble3_webp} image_480_webp={bubble3_480_webp} image={bubble3} image_480={bubble3_480}/></div>
     </div>
   )
 }

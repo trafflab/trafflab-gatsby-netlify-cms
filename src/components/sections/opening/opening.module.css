@@ -48,9 +48,14 @@
   line-height: 1.55;
 }
 
-.buttonContainer {
-  width: 245rem;
+.buttonsContainer {
+  width: min-content;
+  display: grid;
+  gap: 20rem;
+  grid-template-columns: 1fr 1fr;
+  width: 490rem;
 }
+
 
 @media screen and (max-width: 480px) {
   .content {
@@ -77,8 +82,12 @@
     flex-direction: column;
   }
 
-  .buttonContainer {
-    width: 177rem;
+  .buttonsContainer {
+    width: min-content;
+    display: grid;
+    gap: 20rem;
+    grid-template-columns: 1fr;
+    width: 290rem;
   }
 
   .subtitle1 {

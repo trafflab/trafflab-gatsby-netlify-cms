@@ -61,9 +61,7 @@
 .inputsContainer {
   margin-bottom: 20rem;
   display: grid;
-  grid-auto-flow: column;
   gap: 24rem;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
 }
 

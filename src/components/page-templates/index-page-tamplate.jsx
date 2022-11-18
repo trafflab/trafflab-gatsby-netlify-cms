@@ -49,7 +49,7 @@ export default function IndexPageTemplate({ blogData }) {
       <WhatWeDo openFormPopupHandler={openFormPopup}/>
       <Pro />
       <CountriesMarquee />
-      <PageForm />
+      <PageForm isMiddle />
       <TrafficSources />
       <Ecosystem />
       <Blog articlesData={blogData} openArticlePopupHandler={openArticlePopup}/>

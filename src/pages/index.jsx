@@ -6,34 +6,40 @@ import Helmet from "react-helmet";
 const getRedirectLanguage = () => {
 
   if (typeof navigator === `undefined`) {
-    return "en";
+    // return "en";
+    return 'ru'
   }
 
   const lang = navigator && navigator.language && navigator.language.split("-")[0];
-  if (!lang) return "en";
+  // if (!lang) return "en";
+  if (!lang) return "ru";
+
 
   switch (lang) {
-    case "en":
-      return "en";
+    // case "en":
+    //   return "en";
     case "ru":
       return "ru";
-    case "uk":
-      return "ua";
+    // case "uk":
+    //   return "ua";
+    // default:
+    //   return "en";
     default:
-      return "en";
+      return "ru";
   }
 };
 
 export default function IndexPage() {
 
   useEffect(() => {
-    let urlLang
-    const savedLang = localStorage.getItem('lang')
-    if (savedLang) urlLang = localStorage.getItem('lang')
-    else {
-      urlLang = getRedirectLanguage();
-      localStorage.setItem('lang', urlLang);
-    }
+    let urlLang = 'ru'
+    // const savedLang = localStorage.getItem('lang')
+
+    // if (savedLang) urlLang = localStorage.getItem('lang')
+    // else {
+    //   urlLang = getRedirectLanguage();
+    //   localStorage.setItem('lang', urlLang);
+    // }
     
     navigate(`/${urlLang}/`, {replace: true})
 

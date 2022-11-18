@@ -35,7 +35,7 @@ const ruData = {
   lang: 'ru',
   articlePageBackButton: 'К блогу',
   navList: {
-    sources: 'CPA-платформа:',
+    sources: 'CPA-платформа',
     ecosystem: 'Экосистема',
     blog: 'Блог',
     partners: 'Партнёры',

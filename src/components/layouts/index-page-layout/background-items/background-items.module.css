@@ -19,21 +19,21 @@
   height: 150rem;
 }
 .net2 {
-  top: 3020rem;
-  left: 0;
-  width: 124rem;
-  z-index: 5;
-  height: 150rem;
-}
-.net3 {
   top: 3785rem;
   left: 0;
   width: 124rem;
   z-index: 5;
   height: 150rem;
 }
+.net3 {
+  top: 4752rem;
+  left: 0;
+  width: 124rem;
+  z-index: 5;
+  height: 150rem;
+}
 .net4 {
-  top: 5035rem;
+  top: 6583rem;
   left: 0;
   width: 124rem;
   z-index: 5;
@@ -42,7 +42,7 @@
 
 
 .line1 {
-  top: 1910rem;
+  top: 1972rem;
   left: 0;
   width: 100%;
   height: 91rem;
@@ -50,7 +50,7 @@
 
 }
 .line2 {
-  top: 2852rem;
+  top: 2940rem;
   left: 0;
   width: 100%;
   height: 91rem;
@@ -58,7 +58,7 @@
 
 }
 .line3 {
-  top: 3640rem;
+  top: 5318rem;
   left: 0rem;
   width: 100%;
   height: 91rem;
@@ -66,14 +66,13 @@
 
 }
 .line4 {
-  top: 4650rem;
+  top: 6227rem;
   left: 0rem;
   width: 100%;
   height: 91rem;
   z-index: 5;
 
 }
-
 
 
 .blurredBubble2 {
@@ -89,8 +88,8 @@
   height: 1028rem;
 }
 .blurredBubble4 {
-  top: 3225rem;
-  left: 0rem;
+  top: 3425rem;
+  right: 0rem;
   width: 900rem;
   height: 925rem;
 }
@@ -105,6 +104,13 @@
   left: 0;
   width: 560rem;
   height: 760rem;
+}
+
+.blurredBubble7 {
+  width: 649rem;
+  height: 876rem;
+  top: 6300rem;
+  right: 0;
 }
 
 
@@ -132,25 +138,25 @@
   
 
   .line1 {
-    top: 1433rem;
+    top: 1944rem;
     left: 0;
     width: 320rem;
     height: 32rem;
   }
   .line2 {
-    top: 2523rem;
+    top: 3459rem;
     left: 0;
     width: 320rem;
     height: 32rem;
   }
   .line3 {
-    top: 3050rem;
+    top: 4344rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
   }
   .line4 {
-    top: 3645rem;
+    top: 5556rem;
     left: 0rem;
     width: 320rem;
     height: 32rem;
@@ -186,6 +192,13 @@
     left: 0;
     width: 311rem;
     height: 620rem;
+  }
+
+  .blurredBubble7 {
+    width: 320rem;
+    height: 545rem;
+    top: 5630rem;
+    right: 0;
   }
 }
 

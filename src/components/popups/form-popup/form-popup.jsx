@@ -23,7 +23,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const successMessageHandler = React.useContext(MessagesContext)
 
   const handleSendClick = () => {
-    sendFormToTg(values.name, values.tg)
+    sendFormToTg(values.product, values.name, values.contact, values.comfyContact)
       .then(res => {
         if (res.ok) {
           successMessageHandler()
@@ -52,17 +52,33 @@ export default function FormPopup({ closeHandler, isOpen }) {
         <form className={styles.form}>
           <div className={styles.inputsContainer}>
               <BasicInput
+                name='product'
+                placeholder='Ваш продукт'
+                value={values.product}
+                onChange={handleChange}
+                minLength={1}
+                isRequired={true}
+              />
+              <BasicInput
                 name='name'
-                placeholder={data.nameInput}
+                placeholder='Ваше имя'
                 value={values.name}
                 onChange={handleChange}
                 minLength={1}
                 isRequired={true}
               />
               <BasicInput
-                name='tg'
-                placeholder='Telegram'
-                value={values.tg}
+                name='contact'
+                placeholder='Контакт для связи'
+                value={values.contact}
+                onChange={handleChange}
+                minLength={1}
+                isRequired={true}
+              />
+              <BasicInput
+                name='comfyContact'
+                placeholder='Удобный канал связи'
+                value={values.comfyContact}
                 onChange={handleChange}
                 minLength={1}
                 isRequired={true}

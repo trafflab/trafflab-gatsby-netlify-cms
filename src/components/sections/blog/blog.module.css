@@ -2,21 +2,38 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 137rem;
+  padding-bottom: 120rem;
   padding-top: 40rem;
   overflow: hidden;
 }
 
-.list {
+.listContainer {
   display: flex;
   align-self: flex-start;
   position: relative;
   /* width: 100%; */
 }
 
+.list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.buttonContainer {
+  width: 300rem;
+  align-self: flex-start;
+}
+
 @media screen and (max-width: 480px) {
   .blog {
-    padding-bottom: 45rem;
+    padding-bottom: 90rem;
     padding-top: 20rem;
+  }
+
+  .buttonContainer {
+    width: 290rem;
+    align-self: center;
+
   }
 }

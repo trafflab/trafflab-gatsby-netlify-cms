@@ -10,12 +10,12 @@ import image_webp from '../../../images/page-form/page-form.webp';
 import image_480_webp from '../../../images/page-form/page-form480.webp';
 
 
-export default function PageForm() {
+export default function PageForm({isMiddle}) {
   const data = React.useContext(LangContext).pageForm;
   
 
   return (
-    <section className={styles.pageForm}>
+    <section className={`${styles.pageForm} ${isMiddle ? styles.isMiddle : {}}`}>
       <div className={styles.content}>
         
         <div className={styles.formContainer}>

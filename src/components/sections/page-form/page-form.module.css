@@ -4,6 +4,10 @@
   justify-content: center;
 }
 
+.isMiddle {
+  padding-bottom: 150rem;
+}
+
 .content {
   background-color: var(--color-dark-1);
   overflow: hidden;
@@ -58,6 +62,10 @@
     grid-template-columns: 1fr;
     width: 280rem;
     border-radius: 20rem;
+  }
+
+  .isMiddle {
+    padding-bottom: 90rem;
   }
 
   .formContainer{

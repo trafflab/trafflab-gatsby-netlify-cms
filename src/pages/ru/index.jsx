@@ -25,7 +25,7 @@ export const query = graphql`
   query IndexPageRuQuery($lang: String = "ru", $type: String = "article") {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}, customSlug: {in: ["shemi_ot_i_do", "1000000000_na_gemblinge_kak_eto_rabotayet", "ostorozhno_moshenniki_skam_sheyf_i_frod_v_arbitrazhe"]}}}
       ) {
       edges {
         node {

@@ -6,15 +6,16 @@ import { Is480Context, SiteLangContext, LangContext } from '../../../utils/conte
 import { getUrlLang } from '../../../utils/utils';
 import Helmet from "react-helmet";
 import favicon from '../../../images/misc/favicon.ico'
-import enData from '../../../misc/en-data'
+// import enData from '../../../misc/en-data'
 import ruData from '../../../misc/ru-data'
-import uaData from '../../../misc/ua-data'
+// import uaData from '../../../misc/ua-data'
 import { YMInitializer } from 'react-yandex-metrika';
 
 export default function PageLayout({ children, pageTitle = 'Trafflab' }) {
   const is480 = useIs480()
   const siteLang = getUrlLang()
-  const langData = siteLang === 'ru' ? ruData : siteLang === 'en' ? enData : uaData
+  // const langData = siteLang === 'ru' ? ruData : siteLang === 'en' ? enData : uaData
+  const langData = ruData
 
   React.useEffect(() => {
     if (localStorage.getItem('lang') !== 'ru' ) localStorage.setItem('lang', 'ru');

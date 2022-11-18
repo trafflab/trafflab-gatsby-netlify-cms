@@ -1,5 +1,5 @@
 .ecosystem {
-  padding-bottom: 304rem;
+  padding-bottom: 150rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 480px) {
   .ecosystem {
-    padding-bottom: 90em;
+    padding-bottom: 70em;
     padding-top: 20rem;
   }
 }

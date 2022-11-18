@@ -1,6 +1,8 @@
 import * as React from "react"
 import * as styles from './opening.module.css';
 import BasicButton from "../../ui/basic-button/basic-button";
+import TgButton from "../../common/tg-button/tg-button";
+
 import OpeningImage from "./opening-image/opening-image";
 import { Is480Context, LangContext } from "../../../utils/contexts";
 
@@ -16,8 +18,9 @@ export default function Opening({openFormPopupHandler}) {
           <h1 className={styles.title}>{is480 ? data.title480 : data.title}</h1>
           <p className={styles.subtitle1}>{data.subtitle1}</p>
           <p className={styles.subtitle2}>{data.subtitle2}</p>
-          <div className={styles.buttonContainer}>
-            <BasicButton handler={openFormPopupHandler} text={is480 ? data.button480 : data.button}/>
+          <div className={styles.buttonsContainer}>
+            <TgButton text='Я аффилиат'/>
+            <BasicButton handler={openFormPopupHandler} text='Я рекламодатель"'/>
           </div>
         </div>
 
