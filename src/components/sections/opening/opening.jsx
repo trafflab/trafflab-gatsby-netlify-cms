@@ -19,8 +19,8 @@ export default function Opening({openFormPopupHandler}) {
           <p className={styles.subtitle1}>{data.subtitle1}</p>
           <p className={styles.subtitle2}>{data.subtitle2}</p>
           <div className={styles.buttonsContainer}>
-            <TgButton text='Я аффилиат'/>
-            <BasicButton handler={openFormPopupHandler} text='Я рекламодатель"'/>
+            <TgButton text='Я веб-мастер'/>
+            <BasicButton handler={openFormPopupHandler} text='Я рекламодатель'/>
           </div>
         </div>
 

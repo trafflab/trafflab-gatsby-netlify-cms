@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 export default function IndexPageRu({ data }) {
 
   return (
-    <PageLayout pageTitle="Профитная экосистема">
+    <PageLayout pageTitle="TRAFFLAB">
       <Helmet>
         <meta name='description' content="для арбитражника любого уровня"/>
         <meta name='keywords' content="Trafflab, арбитраж, ecosystem, аффилейт-маркетинг"/>

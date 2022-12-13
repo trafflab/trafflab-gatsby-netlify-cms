@@ -31,9 +31,9 @@
 }
 
 .subtitle1 {
-  color: var(--color-gray-2);
+  color: var(--color-white);
   font-size: 22rem;
-  font-weight: 300;
+  font-weight: 700;
   width: 530rem;
   margin-bottom: 0rem;
   line-height: 1.55;

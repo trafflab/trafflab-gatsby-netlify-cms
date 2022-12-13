@@ -16,7 +16,7 @@ import graphIcon from '../../../images/icons/graph-2.svg';
 
 
 
-export default function WhatWeDo({openFormPopupHandler}) {
+export default function WhatWeDo() {
   const is480 = React.useContext(Is480Context);
   const data = React.useContext(LangContext).whatWeDoSection;
 
@@ -28,14 +28,14 @@ export default function WhatWeDo({openFormPopupHandler}) {
         <div className={styles.textContainer}>
           <h2 className={styles.title}>{is480 ? data.title480 : data.title}<br/><span style={{color: 'var(--color-red-1'}}>{is480 ? data.subtitle480 : data.subtitle}</span></h2>
           <ul className={styles.list}>
-            { is480 && <WhatWeDoCard icon={redCalendarIcon} text={data.cards[6]} />}
+            {/* { is480 && <WhatWeDoCard icon={redCalendarIcon} text={data.cards[6]} />} */}
             <WhatWeDoCard icon={bannerIcon} text={data.cards[0]} />
             <WhatWeDoCard icon={calendarIcon} text={data.cards[1]} />
             <WhatWeDoCard icon={phoneIcon} text={data.cards[2]} />
             <WhatWeDoCard icon={sortIcon} text={data.cards[3]} />
             <WhatWeDoCard icon={coinIcon} text={data.cards[4]} />
             <WhatWeDoCard icon={graphIcon} text={data.cards[5]} />
-            {!is480 && <WhatWeDoCard icon={redCalendarIcon} text={data.cards[6]} />}
+            {/* {!is480 && <WhatWeDoCard icon={redCalendarIcon} text={data.cards[6]} />} */}
           </ul>
           <div className={styles.buttonContainer}>
             <TgButton text={data.button}/>

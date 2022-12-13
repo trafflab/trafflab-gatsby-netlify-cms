@@ -20,7 +20,12 @@ export default function PageForm({isMiddle}) {
         
         <div className={styles.formContainer}>
           <div className={styles.textImg}>
-            <MediaImage image_webp={data.textImg__webp} image_480_webp={data.textImg__webp} image={data.textImg} image_480={data.textImg} />
+            <MediaImage
+              image_webp={isMiddle ? data.textImg__webp : data.endTextImgWebp}
+              image_480_webp={isMiddle ? data.textImg__webp : data.endTextImgWebp}
+              image={isMiddle ? data.textImg : data.endTextImg}
+              image_480={isMiddle ? data.textImg : data.endTextImg}
+            />
           </div>
           <p className={styles.text}>{data.text}</p>
           <div className={styles.buttonContainer}><TgButton text='Стать партнером'/></div>

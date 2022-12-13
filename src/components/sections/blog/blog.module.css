@@ -21,7 +21,7 @@
 }
 
 .buttonContainer {
-  width: 300rem;
+  min-width: 300rem;
   align-self: flex-start;
 }
 
@@ -32,7 +32,7 @@
   }
 
   .buttonContainer {
-    width: 290rem;
+    min-width: 290rem;
     align-self: center;
 
   }

@@ -21,10 +21,8 @@ export default function NavPopup({isOpen, closeHandler}) {
           
           <nav className={styles.nav}>
             <ul className={styles.list}>
-              <NavPopupElement closeHandler={closeHandler} text={data.sources} linkTo={`/${lang}#sources`} />
               <NavPopupElement closeHandler={closeHandler} text={data.ecosystem} linkTo={`/${lang}#ecosystem`} />
               <NavPopupElement closeHandler={closeHandler} text={data.blog} linkTo={`/${lang}/blog`} />
-              <NavPopupElement closeHandler={closeHandler} text={data.partners} linkTo={`/${lang}#partners`} />
               <NavPopupElement closeHandler={closeHandler} text={data.vacancies} linkTo={`/${lang}#vacancies`} />
               <NavPopupElement closeHandler={closeHandler} text={data.contacts} linkTo='#contacts' />
             </ul>

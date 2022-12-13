@@ -55,7 +55,7 @@ export default function IndexPageTemplate({ blogData }) {
       <Blog articlesData={blogData} openArticlePopupHandler={openArticlePopup}/>
       <PartnersMarquee />
       <Vacancies />
-      <PageForm />
+      <PageForm  />
 
       <ArticlePopup data={articleData} isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
       <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>

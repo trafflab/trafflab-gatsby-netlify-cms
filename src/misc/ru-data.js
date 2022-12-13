@@ -22,6 +22,8 @@ import blogArticle3_webp from '../images/blog-article-popup/article-3.webp'
 
 import pageFormTextImg from '../images/page-form/text-ru.png';
 import pageFormTextImg__webp from '../images/page-form/text-ru.webp';
+import pageFormTextImgIsLast from '../images/page-form/text_ru_islast.png';
+import pageFormTextImgIsLast__webp from '../images/page-form/text_ru_islast.webp';
 
 import pro1 from '../images/pro/pro1.png'
 import pro2 from '../images/pro/pro2.png'
@@ -47,10 +49,10 @@ const ruData = {
   upButton: 'Наверх',
 
   openingSection: {
-    title: 'CPA-сеть:',
-    title480: 'CPA-сеть:',
-    subtitle1: 'Партнерка для профитного залива на iGaming и Ed-Tech.',
-    subtitle2: 'Авторские технологии для увеличения конверта',
+    title: 'TRAFFLAB',
+    title480: 'TRAFFLAB',
+    subtitle1: 'iGaming партнерская сеть.',
+    subtitle2: 'Регистрируйся и получи лучшие условия для',
     button: 'Стать партнером',
     button480: 'Присоединиться',
   },
@@ -84,7 +86,7 @@ const ruData = {
     title480: 'Все, что вам нужно — это лить трафик.',
     subtitle: 'Остальное Trafflab берет на себя',
     subtitle480: 'Остальное Trafflab берет на себя',
-    button: 'Начать зарабатывать!',
+    button: 'Старт!',
     cards: [
       'Максимально выгодные условия и индивидуальные ставки по каждому офферу и потоку',
       'Заботливая поддержка менеджеров на всех этапах работы',
@@ -97,7 +99,7 @@ const ruData = {
   },
 
   pro: {
-    subtitle: 'pro',
+    subtitle: 'PRO',
     text: 'Trafflab - международная компания. В команде профессионалы в сфере iGaming и EDTech с 7+ летним опытом. Базируемся в Украине, Беларуси, во Франции и на Кипре, а также в некоторых азиатских странах. У нас нет предпочтений по национальному, гражданскому или гендерному признаку. Мы говорим на разных языках, в разных странах, но строим взаимодействие со всеми партнерами по единому принципу: win-win.',
     pros: [
       {
@@ -117,7 +119,7 @@ const ruData = {
         about: [
           'Опыт в гемблинге 5+ лет',
           'За честный подход к работе: пресекает шейф на корню',
-          'С ней веб-мастера заработали $100 000+',
+          'С ней веб-мастера заработали   $1 000 000+',
         ]
       },
       {
@@ -125,9 +127,9 @@ const ruData = {
         photo_webp: pro3_webp,
         photoAlt: 'Дима',
         about: [
-          'Каждый продукт перепроверяет лично и знает что конвертит',
-          'еще 2 пункта ждем от Димы',
-          'еще 2 пункта ждем от Димы',
+          '5+ лет находит общий язык с бурж реклами',
+          'Каждый продукт перепроверяет лично и знает, что конвертит',
+          'Защитил срезанный траф перед рекламодателями на $200 000+',
         ]
       },
     ]
@@ -344,6 +346,8 @@ const ruData = {
     button480: 'Присоединиться',
     textImg: pageFormTextImg,
     textImgWebp: pageFormTextImg__webp,
+    endTextImg: pageFormTextImgIsLast,
+    endTextImgWebp: pageFormTextImgIsLast__webp,
   },
 
   footer: {
