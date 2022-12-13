@@ -39,10 +39,10 @@ export default function Blog({ openArticlePopupHandler, articlesData }) {
                 }
               </ul>
         }
-        <div className={styles.buttonContainer}>
-          <BasicButton text='Больше статей!' handler={() => navigate('blog')}/>
-        </div>
       </SectionContentLayout>
+      <div className={styles.buttonContainer}>
+          <BasicButton text='Больше статей!' handler={() => navigate('blog')}/>
+      </div>
     </section>
   )
 }
