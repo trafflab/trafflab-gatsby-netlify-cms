@@ -6,6 +6,8 @@ import partnerLogo5 from '../images/partner-logos/logo-5.png';
 import partnerLogo6 from '../images/partner-logos/logo-6.png';
 import partnerLogo7 from '../images/partner-logos/logo-7.png';
 import partnerLogo8 from '../images/partner-logos/logo-8.png';
+import partnerLogo9 from '../images/partner-logos/logo-9.png';
+
 
 import partnerLogo1_webp from '../images/partner-logos/logo-1.webp';
 import partnerLogo2_webp from '../images/partner-logos/logo-2.webp';
@@ -15,6 +17,8 @@ import partnerLogo5_webp from '../images/partner-logos/logo-5.webp';
 import partnerLogo6_webp from '../images/partner-logos/logo-6.webp';
 import partnerLogo7_webp from '../images/partner-logos/logo-7.webp';
 import partnerLogo8_webp from '../images/partner-logos/logo-8.webp';
+import partnerLogo9_webp from '../images/partner-logos/logo-9.webp';
+
 
 const partnersData = [
   {
@@ -56,6 +60,11 @@ const partnersData = [
     logo: partnerLogo8,
     logo_webp: partnerLogo8_webp,
     dimensionsStyle: {width: '225em', height: '64em'},
+  },
+  {
+    logo: partnerLogo9,
+    logo_webp: partnerLogo9_webp,
+    dimensionsStyle: {width: '116em', height: '84em'},
   },
 ]
 
