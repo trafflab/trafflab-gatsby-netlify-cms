@@ -27,10 +27,26 @@ module.exports = {
         output: '/',
         resolveSiteUrl: () => 'https://trafflab.com',
         resolvePages: ({ allMarkdownRemark: { edges } }) => {
-          return edges.map((page) => ({
+          const articlesUrl = edges.map((page) => ({
             path: page.node.fields.slug,
             date: page.node.frontmatter.date
           }))
+          const baseUrls = [
+            "/",
+            "/ru/",
+            "/en/",
+            "/ru/blog/",
+            "/en/blog/",
+            "/ru/blog/how-to/",
+            "/en/blog/how-to/",
+          ]
+          baseUrls.forEach(url => {
+            articlesUrl.push({
+              path: url,
+              date: "2022-07-07T16:02:49.948Z",
+            })
+          })
+          return articlesUrl
         },
         serialize: ({path, date}) => ({
           url: path,

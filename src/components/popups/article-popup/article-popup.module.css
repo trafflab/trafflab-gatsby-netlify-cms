@@ -76,7 +76,10 @@
   color: var(--color-gray-2);
   text-decoration: none;
   transition: 0.35s opacity ease-out;
-  color: var(--color-red-3)
+  color: var(--color-red-3);
+  overflow-wrap: anywhere;
+  word-wrap:  break-word;
+  word-break: break-word;
 }
 
 .textContainer a:hover {
