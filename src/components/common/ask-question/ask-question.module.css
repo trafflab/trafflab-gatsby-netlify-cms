@@ -40,6 +40,10 @@
   
 }
 
+.textContainer {
+  position: relative;
+}
+
 @media screen and (max-width: 480px) {
   .askQuestion {
     gap: 10rem;
@@ -54,5 +58,7 @@
     font-size: var(--font-size-body-small);
     margin-bottom: -1rem;
   }
-
+  .textContainer {
+    /* margin-top: -2rem; */
+  }
 }

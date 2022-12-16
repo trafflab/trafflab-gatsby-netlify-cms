@@ -35,7 +35,7 @@ import pro3_webp from '../images/pro/pro3.webp'
 
 const ruData = {
   lang: 'ru',
-  articlePageBackButton: 'К блогу',
+  articlePageBackButton: 'В начало',
   navList: {
     sources: 'CPA-платформа',
     ecosystem: 'Экосистема',
@@ -381,10 +381,10 @@ const ruData = {
       linkHowTo: 'Блог HowTo'
     },
     howToBlog: {
-      title: 'Блог HowTo',
+      title: 'Блог',
       about: 'Актуальные новости, рекомендации по заливу, мануалы, инсайдерская информация из закрытых источников аффилейт-маркетинга. Читай блог TraffLab и будь в курсе всех событий рынка.',
       noArticles: 'Статьи совсем скоро будут в свободном доступе. Следите за анонсами :)',
-      linkBlog: 'К блогу',
+      linkBlog: 'В начало',
     }
   }
 }

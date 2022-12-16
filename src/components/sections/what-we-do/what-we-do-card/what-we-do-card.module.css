@@ -18,7 +18,7 @@
 }
 
 .text {
-  margin-top: 12rem;
+  margin-top: 0rem;
   width: 222rem;
   font-size: var(--font-size-body-big);
   color: var(--color-gray-2);
