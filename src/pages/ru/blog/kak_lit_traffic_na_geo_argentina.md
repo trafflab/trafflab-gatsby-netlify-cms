@@ -50,7 +50,7 @@ cardImage: /img/гео-арг-380-390.png
 
 Аргентина определенно представляет tier-2. Сочетая несочетаемое (огромный ВВП при наличии бедности), по экономическим показателям на душу населения страна практически идентична представителям СНГ. Однако показатель инфляции слишком высок — он вырос с 50% до 95% за 2022 год.
 
-![](https://lh3.googleusercontent.com/cj9IBIz8b9eG2bvl8ahPiZCYYyMsFx6hEP7O_QBI_ldG6AmwnJmWIjmGw5vg-CwZaRhNzSdzf6EQEjdhoDWRBqhRWYVdyMivMLs9DmwVDFJ6aOuoc6JUYp12esh7QQrf46LGgNMHFZyUELGJi69drAFg3ZSvz9rh3iEgBmrks8BFO4QOEUdcX_aDHqfn7g)
+![]()
 
 Небольшая полезная характеристика:
 
@@ -120,7 +120,7 @@ Trafflab.com разбирает гео, привлекательные для п
 
 Ближайшие анонсы:
 
-* Telegram — пул офферов по актуальным в 2023 году гео, шпаргалки по запуску трафика с Facebook на актуальную дату
-* Instagram — интервью с рекламодателями по гео Латам
+* [Telegram](https://bit.ly/3j7zpmK) — пул офферов по актуальным в 2023 году гео, шпаргалки по запуску трафика с Facebook на актуальную дату
+* [Instagram](http://bit.ly/3ZZtX6K) — интервью с рекламодателями по гео Латам
 
 Trafflab CPA. Вместе мы добиваемся всего.
