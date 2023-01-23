@@ -33,9 +33,9 @@ export default function BlogPageTemplate({ blogData }) {
               <BlogPageList articlesData={blogData}/>
             </BlogSectionContentLayout>
           </section>
-          <Link to={'how-to'} className={styles.link}>
+          {/* <Link to={'how-to'} className={styles.link}>
             <BasicButton text={langData.linkHowTo} handler={() => null}/>
-          </Link>
+          </Link> */}
         </main>
         <Footer />
         {!is480 && <FixedContacts scrollHandler={smoothScrollToHeader} />}
