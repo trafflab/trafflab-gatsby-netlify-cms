@@ -14,9 +14,18 @@
   /* width: 100%; */
 }
 
+.buttonContainer {
+  min-width: 300rem;
+}
+
 @media screen and (max-width: 480px) {
   .blog {
     padding-bottom: 45rem;
     padding-top: 20rem;
+  }
+
+  .buttonContainer {
+    min-width: 290rem;
+    align-self: center;
   }
 }

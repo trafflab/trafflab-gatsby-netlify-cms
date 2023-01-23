@@ -76,6 +76,7 @@ const enData = {
   blog: {
     subtitle: "blog",
     text: "Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments.",
+    buttonText: 'All articles',
     articlesList: [
       {
         notReadyMessage: "The article will be available for free very soon. Stay tuned for announcements :)",
