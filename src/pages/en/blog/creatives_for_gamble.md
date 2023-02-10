@@ -11,7 +11,7 @@ headDescription: Creativity lies in the core of an advert. The creative
   Although gamble creatives are relatively simple, webmasters often make
   commonplace mistakes leading to low CTR and conversion to targeted actions.
   This is how to avoid it!
-image: /img/креативы-для-гемблы.png
+image: /img/креативы-для-гемблы-англ.png
 cardTitle: "Creatives for gamble: secrets of good and bad ads"
 cardText: Creativity lies in the core of an advert. The creative component
   forces a potential player to become an actual, paying gambler. Although gamble
