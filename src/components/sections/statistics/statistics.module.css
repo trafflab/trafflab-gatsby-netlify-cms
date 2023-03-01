@@ -13,7 +13,7 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .listElement {
@@ -59,9 +59,30 @@
   
   .list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: none;
     row-gap: 25rem;
+    grid-template-areas: 
+    'el1 el2'
+    'el3 el4'
+    'el5 el5';
+  }
 
+  .listElement:nth-child(1) {
+    grid-area: el1;
+  }
+
+  .listElement:nth-child(2) {
+    grid-area: el2;
+  }
+  .listElement:nth-child(3) {
+    grid-area: el3;
+  }
+  .listElement:nth-child(4) {
+    grid-area: el4;
+  }
+  .listElement:nth-child(5) {
+    grid-area: el5;
   }
   
   .listElement {

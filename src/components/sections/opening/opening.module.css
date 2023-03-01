@@ -22,7 +22,7 @@
 }
 
 .title {
-  font-size: var(--font-size-large);
+  font-size: 64rem;
   color: var(--color-white);
   font-weight: 700;
   font-family: 'HeliosExt';
@@ -32,7 +32,7 @@
 
 .subtitle1 {
   color: var(--color-white);
-  font-size: 22rem;
+  font-size: 44rem;
   font-weight: 700;
   width: 530rem;
   margin-bottom: 0rem;

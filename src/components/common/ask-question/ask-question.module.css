@@ -16,9 +16,9 @@
 }
 
 .askButton {
-  position: absolute;
-  top: 110%;
-  right: 0;
+  /* position: absolute; */
+  /* top: 110%;
+  right: 0; */
   width: max-content;
   background-color: transparent;
   border: none;
