@@ -8,7 +8,7 @@ import FixedContacts from '../../common/fixed-contacts/fixed-contacts';
 import { NavPopup } from '../../popups';
 import BasicButton from '../../ui/basic-button/basic-button';
 import { Link } from 'gatsby';
-import {getUrlLang} from '../../../utils/utils'
+import {getUrlLang} from '../../../../utils/utils'
 export default function HowToPageTemplate({ blogData }) {
   
   const pageRef = React.useRef()

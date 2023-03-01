@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './lang-list.module.css';
 import { navigate } from "gatsby";
-import { changeRelativeUrlLang } from "../../../utils/utils";
+import { changeRelativeUrlLang } from "../../../../utils/utils";
 import { SiteLangContext } from "../../../../utils/contexts";
 
 export default function LangList() {

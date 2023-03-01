@@ -5,7 +5,7 @@ import ContactsList from "../../common/contacts-list/contacts-list";
 import Logo from "../../common/logo/logo";
 import NavPopupElement from "./nav-popup-element/nav-popup-element";
 import { LangContext } from "../../../../utils/contexts";
-import { getUrlLang } from "../../../utils/utils";
+import { getUrlLang } from "../../../../utils/utils";
 export default function NavPopup({isOpen, closeHandler}) {
   const data = React.useContext(LangContext).navPopup;
   const lang = getUrlLang()

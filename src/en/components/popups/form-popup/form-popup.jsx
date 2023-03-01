@@ -10,7 +10,7 @@ import image_480_webp from '../../../../images/form-popup/image480.webp';
 
 import { LangContext, MessagesContext } from '../../../../utils/contexts';
 import useForm from '../../../../hooks/use-form';
-import { sendFormToTg } from "../../../utils/api";
+import { sendFormToTg } from "../../../../utils/api";
 import BasicButton from "../../ui/basic-button/basic-button";
 import BasicInput from "../../ui/basic-input/basic-input";
 

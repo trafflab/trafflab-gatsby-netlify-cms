@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './page-form.module.css';
 import { LangContext, MessagesContext } from "../../../../utils/contexts";
-import { sendFormToTg } from '../../../utils//api'
+import { sendFormToTg } from '../../../../utils/api'
 import useForm  from '../../../../hooks/use-form'
 import MediaImage from "../../ui/media-image/media-image";
 

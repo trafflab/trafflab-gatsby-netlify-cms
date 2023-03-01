@@ -3,11 +3,11 @@ import * as styles from './page-layout.module.css';
 import '../../../../styles/global.css';
 import useIs480 from '../../../../hooks/use-is-480';
 import { Is480Context, SiteLangContext, LangContext } from '../../../../utils/contexts';
-import { getUrlLang } from '../../../utils/utils';
+import { getUrlLang } from '../../../../utils/utils';
 import Helmet from "react-helmet";
 import favicon from '../../../../images/misc/favicon.ico'
-import enData from '../../../misc/en-data'
-import ruData from '../../../misc/ru-data'
+import enData from '../../../../misc/en-data'
+import ruData from '../../../../misc/ru-data'
 // import uaData from '../../../misc/ua-data'
 // del ue
 import { YMInitializer } from 'react-yandex-metrika';

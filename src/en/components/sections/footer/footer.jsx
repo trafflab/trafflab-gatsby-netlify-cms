@@ -7,7 +7,7 @@ import CircledIconWrapper from '../../common/circled-icon-wrapper/circled-icon-w
 import mailIcon from '../../../../images/icons/mail.svg';
 import skypeIcon from '../../../../images/icons/skype.svg';
 import { Is480Context, LangContext } from "../../../../utils/contexts";
-import { getUrlLang } from "../../../utils/utils";
+import { getUrlLang } from "../../../../utils/utils";
 import { Link } from "gatsby";
 
 export default function Footer() {

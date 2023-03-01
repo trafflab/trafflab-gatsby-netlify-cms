@@ -11,7 +11,7 @@ import {
   Vacancies,
   PageForm,
 } from '../sections';
-import { changeUrl } from "../../utils/utils";
+import { changeUrl } from "../../../utils/utils";
 import { SiteLangContext } from "../../../utils/contexts";
 
 export default function IndexPageTemplate({ blogData }) {

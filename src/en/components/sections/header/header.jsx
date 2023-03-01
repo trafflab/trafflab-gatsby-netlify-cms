@@ -4,7 +4,7 @@ import Logo from "../../common/logo/logo";
 import NavList from "../../common/nav-list/nav-list";
 import AskQuestion from "../../common/ask-question/ask-question";
 import { Link } from "gatsby";
-import { getUrlLang } from "../../../utils/utils";
+import { getUrlLang } from "../../../../utils/utils";
 
 export default function Header({ openNavPopupHandler }) {
 

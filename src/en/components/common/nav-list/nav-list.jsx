@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './nav-list.module.css';
 import NavListElement from "./nav-list-element/nav-list-element";
 import { LangContext } from "../../../../utils/contexts";
-import { getUrlLang } from "../../../utils/utils";
+import { getUrlLang } from "../../../../utils/utils";
 
 export default function NavList({ isFooter=false }) {
   const data = React.useContext(LangContext).navList

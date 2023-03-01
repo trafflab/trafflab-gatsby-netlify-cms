@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Loader from "./components/ui/loader/loader"
+import Loader from "./ru/components/ui/loader/loader"
 
 export default function HTML(props) {
   return (

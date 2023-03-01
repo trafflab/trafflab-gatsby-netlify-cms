@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArticlePageCmsTemplate } from '../../templates/article-page/article-page';
-import BlogCard from '../../components/sections/blog/blog-card/blog-card';
+import BlogCard from '../../ru/components/sections/blog/blog-card/blog-card';
 
 const ArticlePagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS()
