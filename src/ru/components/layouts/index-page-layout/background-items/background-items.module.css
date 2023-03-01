@@ -19,7 +19,7 @@
   height: 150rem;
 }
 .net2 {
-  top: 3601rem;
+  top: 3525rem;
   left: 0;
   width: 124rem;
   z-index: 5;
@@ -33,7 +33,7 @@
   height: 150rem;
 }
 .net4 {
-  top: 6443rem;
+  top: 6409rem;
   left: 0;
   width: 124rem;
   z-index: 5;
@@ -42,7 +42,7 @@
 
 
 .line1 {
-  top: 1823rem;
+  top: 1759rem;
   left: 0;
   width: 100%;
   height: 91rem;
@@ -50,7 +50,7 @@
 
 }
 .line2 {
-  top: 2816rem;
+  top: 2727rem;
   left: 0;
   width: 100%;
   height: 91rem;
@@ -66,7 +66,7 @@
 
 }
 .line4 {
-  top: 6091rem;
+  top: 6029rem;
   left: 0rem;
   width: 100%;
   height: 91rem;
@@ -138,13 +138,13 @@
   
 
   .line1 {
-    top: 1844rem;
+    top: 1787rem;
     left: 0;
     width: 320rem;
     height: 32rem;
   }
   .line2 {
-    top: 3389rem;
+    top: 3341rem;
     left: 0;
     width: 320rem;
     height: 32rem;

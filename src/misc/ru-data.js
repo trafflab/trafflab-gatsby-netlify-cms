@@ -50,7 +50,7 @@ const ruData = {
 
   openingSection: {
     title: 'iGaming',
-    title480: 'iGaming',
+    title480: 'iGaming | CPA - сеть',
     subtitle1: 'CPA - сеть',
     subtitle2: 'Твой максимальный профит с самой прозрачной платформой',
     button: 'Стать партнером',

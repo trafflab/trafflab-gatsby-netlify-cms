@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as styles from './opening.module.css';
-import BasicButton from "../../ui/basic-button/basic-button";
+import OpeningButton from "./opening-button/opening-button";
 import TgButton from "../../common/tg-button/tg-button";
 
 import OpeningImage from "./opening-image/opening-image";
@@ -20,7 +20,7 @@ export default function Opening({openFormPopupHandler}) {
           <p className={styles.subtitle2}>{data.subtitle2}</p>
           <div className={styles.buttonsContainer}>
             <TgButton text='Я веб-мастер'/>
-            <BasicButton handler={openFormPopupHandler} text='Я рекламодатель'/>
+            <OpeningButton handler={openFormPopupHandler} text='Я рекламодатель'/>
           </div>
         </div>
 

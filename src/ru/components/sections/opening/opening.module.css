@@ -95,6 +95,7 @@
     margin-bottom: 0;
     width: auto;
     text-align: center;
+    display: none;
   }
   
   .subtitle2 {
