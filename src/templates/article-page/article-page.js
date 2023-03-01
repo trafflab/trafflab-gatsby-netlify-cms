@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { graphql } from 'gatsby';
-import PageLayout from '../../components/layouts/page-layout/page-layout';
-import ArticlePageTemplate from '../../components/page-templates/article-page-template/article-page-template';
+import PageLayout from '../../ru/components/layouts/page-layout/page-layout';
+import ArticlePageTemplate from '../../ru/components/page-templates/article-page-template/article-page-template';
 
 export function ArticlePageCmsTemplate({ article, content, path='adminPanelPath' }) {
   return (

@@ -1,0 +1,161 @@
+.pageForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background-color: var(--color-dark-1);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 1200rem;
+  border-radius: 40rem;
+}
+
+.formContainer{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80rem 0rem 82rem 60rem;
+  box-sizing: border-box;
+}
+
+.textImg {
+  width: 515rem;
+  height: 113rem;
+  margin-bottom: 16rem;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.text {
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  margin-bottom: 24rem;
+  line-height: 1.6;
+}
+
+.form {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20rem;
+  border: none;
+  width: 100%;
+}
+
+.imageContainer {
+  width: 533rem;
+  height: 400rem;
+}
+
+.sendButton {
+  border: none;
+  width: 60rem;
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.35s ease-out;
+  background-color: var(--color-red-1);
+}
+
+.sendButton:hover {
+  background-color: var(--color-red-2);
+  cursor: pointer;
+}
+
+.sendButton:disabled {
+  background-color: var(--color-gray-2);
+}
+
+.buttonIcon {
+  width: 32rem;
+  height: 32rem;
+  background-image: url(../../../../images/icons/arrow-up.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+
+
+.buttonText {
+  display: none;
+  font-family: var(--font-basic);
+  font-size: var(--font-size-body-middle);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .content {
+    grid-template-columns: 1fr;
+    width: 280rem;
+    border-radius: 20rem;
+  }
+
+  .formContainer{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32rem 18rem 0;
+  }
+
+  .textImg {
+    width: 100%;
+    height: 53rem;
+    margin-bottom: 16rem;
+  }
+
+  .text {
+    font-size: var(--font-size-body-big);
+    margin-bottom: 24rem;
+    line-height: 1.57;
+
+  }
+
+  .form {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 20rem;
+    border: none;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 187rem;
+  }
+
+  .sendButton {
+    width: 100%;
+    height: 62rem;
+    border-radius: 40rem;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+    
+    transition: background-color 0.35s ease-out;
+  
+  }
+  
+  .buttonIcon {
+    display: none;
+  }
+  
+  .buttonText {
+    display: inline;
+  }
+}

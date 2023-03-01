@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import HowToPageTemplate from "../../../../components/page-templates/how-to-page-template/how-to-page-template";
-import PageLayout from "../../../../components/layouts/page-layout/page-layout";
+import HowToPageTemplate from "../../../../ru/components/page-templates/how-to-page-template/how-to-page-template";
+import PageLayout from "../../../../ru/components/layouts/page-layout/page-layout";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 

@@ -1,0 +1,149 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--color-dark-2);
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  padding: 50rem 86rem;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageContainer {
+  width: 1008rem;
+  height: 514rem;
+  border-radius: 16rem;
+  overflow: hidden;
+  margin-bottom: 32rem;
+}
+
+.title {
+  font-size: var(--font-size-big);
+  color: var(--color-white);
+  font-weight: 700;
+  font-family: var(--font-basic);
+  margin-bottom: 24rem;
+  line-height: 1.4;
+}
+
+.textContainer {
+  width: 100%;
+  font-size: var(--font-size-body-big);
+  color: var(--color-gray-2);
+  font-weight: 300;
+  font-family: var(--font-basic);
+  line-height: 1.625;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+  margin-bottom: 20rem;
+}
+
+.textContainer ul {
+  /* line-height: 1; */
+}
+
+.textContainer a {
+  color: var(--color-gray-2);
+  text-decoration: none;
+  transition: 0.35s opacity ease-out;
+  color: var(--color-red-3);
+  overflow-wrap: anywhere;
+  word-wrap:  break-word;
+  word-break: break-word;
+}
+
+.textContainer a:hover {
+  opacity: 0.8;
+}
+
+.textContainer img {
+  width: 1008rem;
+}
+
+.backLink {
+  width: 200rem;
+}
+
+.date {
+  color: var(--color-white);
+  align-self: end;
+  font-size: var(--font-size-body-middle);
+  font-weight: 300;
+  font-family: var(--font-basic);
+  margin-bottom: 24rem;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20rem 20rem 50rem;
+    margin-top: -50rem;
+  }
+  /* content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  } */
+
+  .title {
+    font-size: var(--font-size-small);
+    margin-bottom: 16rem;
+    grid-area: title;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 151rem;
+    margin-bottom: 16rem;
+    grid-area: image;
+  }
+
+  .backLink {
+    width: 100%;
+  }
+
+  .textContainer {
+    font-size: var(--font-size-body-middle);
+    line-height: 1.57;
+  }
+  .textContainer h2 {
+    font-size: var(--font-size-body-big);
+  }
+
+  .textContainer img {
+    width: 100%;
+  }
+  
+
+  .date {
+    font-size: var(--font-size-body-small);
+
+    margin-bottom: 30rem;
+
+  }
+}

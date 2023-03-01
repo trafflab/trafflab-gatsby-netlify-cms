@@ -1,6 +1,6 @@
 import * as React from "react";
-import IndexPageTemplate from "../../components/page-templates/index-page-tamplate";
-import PageLayout from "../../components/layouts/page-layout/page-layout";
+import IndexPageTemplate from "../../ru/components/page-templates/index-page-tamplate";
+import PageLayout from "../../ru/components/layouts/page-layout/page-layout";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 
